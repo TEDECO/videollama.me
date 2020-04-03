@@ -30,8 +30,8 @@
     left: 50%;
     width: 200px;
     height: 200px;
-    margin-top: -100px; /* Half the height */
-    margin-left: -100px; /* Half the width */
+    margin-top: -100px;
+    margin-left: -100px;
     cursor: pointer;
   }
 
@@ -66,7 +66,7 @@
 
   // Opciones de configuración de jitsi
   const servidorjitsi = 'meet.jit.si';
-  const optiones = {
+  const opciones = {
     roomName: dameSala(),
     width: '100%',
     height: '100%',
@@ -107,10 +107,11 @@
       } else if (document.documentElement.webkitRequestFullscreen) {
         document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
       }
+    }
   }
 
   function iniciarJitsi() {
-    var api = new JitsiMeetExternalAPI(domain, options);
+    var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
     //api.executeCommand('toggleTileView');
     api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
     api.addEventListener('readyToClose', function(){ location.reload() });
