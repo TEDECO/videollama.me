@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>videollama.me</title>
+  <meta name="description" content="Sistema de videoconferencia basado en jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--<link rel="stylesheet" href="/css/main.css">-->
+
+  <meta name="theme-color" content="#fafafa">
+
+<style>
+
+  html, body, #video, #inicio {
+    background-color:#000;
+    width: 100%;
+    height: 98%;
+    margin: 0;
+    padding: 0;
+  }
+  #inicio img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px; /* Half the height */
+    margin-left: -100px; /* Half the width */
+    cursor: pointer;
+  }
+
+  #video {
+    display: none;
+  }
+
+</style>
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div id="inicio">
+    <img src="/img/llamada.png" width="200" height="200">
+  </div>
+
+  <div id="video"></div>
+
+  <script src="/js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="/js/plugins.js"></script>
+  <!--<script src="/js/main.js"></script>-->
+
+
+<script src='https://meet.jit.si/external_api.js'></script>
+<script>
+
+  // Opciones de configuración de jitsi
+  const servidorjitsi = 'meet.jit.si';
+  const optiones = {
+    roomName: dameSala(),
+    width: '100%',
+    height: '100%',
+    configOverwrite: {
+        disableDeepLinking: true
+    },
+    interfaceConfigOverwrite: {
+        DEFAULT_BACKGROUND: '#612d620',
+        TOOLBAR_ALWAYS_VISIBLE: true,
+        TOOLBAR_BUTTONS: ['hangup'],
+        SHOW_JITSI_WATERMARK: false,
+        SHOW_WATERMARK_FOR_GUESTS: false,
+        SHOW_POWERED_BY: true,
+        AUTHENTICATION_ENABLE: false,
+        SETTINGS_SECTIONS: [ ],
+        OPTIMAL_BROWSER: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron' ],
+    },
+    //onload: openFullscreen(),
+    parentNode: $('#video')
+  };
+
+  // Funciones auxiliares
+  function dameSala() {
+    var sala = window.location.href.split('?tf=');
+    (sala.length == 2)?sala=sala[1]:sala='TEDECO';
+    return sala;
+  }
+
+  function aPantallaCompleta() {
+    if (!document.fullscreenElement &&    // alternative standard method
+        !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) {
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      }
+  }
+
+  function iniciarJitsi() {
+    var api = new JitsiMeetExternalAPI(domain, options);
+    //api.executeCommand('toggleTileView');
+    api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
+    api.addEventListener('readyToClose', function(){ location.reload() });
+  }
+
+  // MAIN
+  $(function() {
+    $('#inicio img').on('click', function(e) {
+      aPantallaCompleta();
+      if ($('#video').is(':hidden')) {
+         $('#inicio').fadeOut();
+         $('#video').fadeIn();
+         iniciarJitsi();
+      }
+    });
+  });
+
+</script>
+
+</body>
+
+</html>
