@@ -63,7 +63,7 @@
 
 <script src='https://meet.jit.si/external_api.js'></script>
 <script>
-
+$(function() {
   // Opciones de configuración de jitsi
   const servidorjitsi = 'meet.jit.si';
   const opciones = {
@@ -85,7 +85,7 @@
         OPTIMAL_BROWSER: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron' ],
     },
     //onload: openFullscreen(),
-    parentNode: document.getElementById('video')
+    parentNode: $('#video')
   };
 
   // Funciones auxiliares
@@ -118,16 +118,15 @@
   }
 
   // MAIN
-  $(function() {
-    $('#inicio img').on('click', function(e) {
-      aPantallaCompleta();
-      if ($('#video').is(':hidden')) {
-         $('#inicio').fadeOut();
-         $('#video').fadeIn();
-         iniciarJitsi();
-      }
-    });
+  $('#inicio img').on('click', function(e) {
+    aPantallaCompleta();
+    if ($('#video').is(':hidden')) {
+       $('#inicio').fadeOut();
+       $('#video').fadeIn();
+       iniciarJitsi();
+    }
   });
+});
 
 </script>
 
