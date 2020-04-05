@@ -132,6 +132,7 @@ $(function() {
   function iniciarJitsi() {
     var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
     //api.executeCommand('toggleTileView');
+    api.executeCommand('toggleFilmStrip');
     api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
     api.on('readyToClose', function(){ location.reload() });
     $('#fin').fadeIn();
