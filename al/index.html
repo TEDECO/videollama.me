@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
   }
+
   #inicio img {
     position: absolute;
     top: 50%;
@@ -35,8 +36,21 @@
     cursor: pointer;
   }
 
-  #video {
+  #video, #fin {
     display: none;
+  }
+
+  #fin img {
+    position: absolute;
+    bottom: 10px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    cursor: pointer;
   }
 
 </style>
@@ -53,6 +67,10 @@
   </div>
 
   <div id="video"></div>
+
+  <div id="fin">
+    <img src="/img/colgar.png" width="100" height="100">
+  </div>
 
   <script src="/js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -115,7 +133,12 @@ $(function() {
     var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
     //api.executeCommand('toggleTileView');
     api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
-    api.addEventListener('readyToClose', function(){ location.reload() });
+    api.on('readyToClose', function(){ location.reload() });
+    $('#fin').fadeIn();
+    $('#fin img').on('click', function(e) {
+      e.preventDefault();
+      api.executeCommand('hangup');
+    });
   }
 
   // MAIN
