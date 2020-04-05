@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>videollama.me</title>
-  <meta name="description" content="Sistema de videoconferencia basado en jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos.">
+  <meta name="description"
+    content="Sistema de videoconferencia basado en jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="/icon.png">
 
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--<link rel="stylesheet" href="/css/main.css">-->
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -20,28 +21,207 @@
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <div class="wrap">
+    <div class="flex header">
+        <svg  viewBox="0 0 39 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="heart" transform="translate(0.000000, 1.000000)">
+                  <path d="M23.6,6 C20.2,6 17.3,8.7 16,11.6 C14.7,8.7 11.8,6 8.4,6 C3.8,6 0,9.8 0,14.4 C0,23.8 9.5,26.3 16,35.6 C22.1,26.3 32,23.5 32,14.4 C32,9.8 28.2,6 23.6,6 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                  <path d="M24,4.08827228 C27.2360398,3.76654413 29.8049473,4.32427384 31.7067225,5.76146141 C33.6084978,7.19864897 34.7062569,9.9448285 35,14" id="Path-2" stroke="var(--main)" stroke-width="2"></path>
+                  <path d="M27,0.0882722798 C30.2360398,-0.233455866 32.8049473,0.324273843 34.7067225,1.76146141 C36.6084978,3.19864897 37.7062569,5.9448285 38,10" id="Path-3" stroke="#979797" stroke-width="2"></path>
+              </g>
+          </g>
+      </svg>
+      <h1>videollama.<b>me</b></h1>
+    </div>
+    <h4>Servicio de <b>TechPeopleCare</b> by <b>TEDECO (UPM)</b> para falicitar el uso de video llamada a personas mayores </h4>
 
-  <h1>videollama.me</h1>
+    <label for="tf">Introduce un <b>código único </b>el <b>teléfono </b>de la persona mayor por ejemplo:</label>
+    <input type="tel" id="tf" name="tf" pattern="[0-9]{9}">
+    <button id="ir">Conectar</button>
+    <iframe src="https://www.youtube.com/embed/BnIWqInR3qQ" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  <h2>Sistema de videoconferencia basado en <a href="https://jitsi.org/meet">jitsi</a> enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos.</h2>
 
-  <label for="tf">Teléfono:</label>
-  <input type="tel" id="tf" name="tf" pattern="[0-9]{9}"> 
-  <button id="ir">Ir</button>
 
+    <div class="social">
+      <ul>
+        <li><a href="#" alt="facebook"><img src="img/facebook.webp"></a></li>
+        <li><a href="#" alt="twitter"><img src="img/twitter.png"></a></li>
+        <li><a href="#" alt="instagram"><img src="img/instagram.png"></a></li>
+      </ul>
+    </div>
+    <footer>
+      <a href="www.techpeople.care)">
+        <img class="TechPeopleCare" src="img/logo_TechPeopleCare_by_TEDECO_UPM_blanco.png">
+      </a>
+      <small>Powered by <a href="https://jitsi.org/meet">jitsi</a> </small>
+    </footer>
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    :root {
+      --main: rgba(47, 75, 38, 1);
+      --light: rgba(194, 207, 178, 1);
+      --second: rgba(141, 181, 128, 1);
+      --dark: rgba(126, 137, 135, 1);
+      --accent: rgba(75, 74, 103, 1);
+    }
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark);
+    }
+
+    a {
+      color: var(--main);
+      text-decoration: none;
+    }
+
+    b {
+      color: var(--main);
+    }
+
+    .wrap {
+      display: flex;
+      flex-flow: column;
+      height: 99vh;
+      justify-content: space-around;
+      background-image: linear-gradient(180deg, var(--light) 54%, #2F4B26 100%);
+      background-image: url('img/papyrus.png');
+      border: 1px solid #979797;
+      background-size: 50%;
+    }
+
+    h1 {
+      font-family: 'Righteous', cursive;
+      font-size: 2.2em;
+      padding: 30px 30px 12px 1px;
+      color: white;
+    }
+    svg {
+      padding: 10px;
+    }
+    #Path {
+      fill: var(--accent);
+    }
+    #Path-2 {
+      stroke: var(--second);
+    }
+   
+    #Path-3 {
+      stroke: var(--dark);
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    .header {
+      width: 100vw;
+      justify-content: center;
+      filter: drop-shadow(2px 1px 1px #000);
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    button{
+      box-shadow: 0px 10px 14px -7px #3e7327;
+      background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+      background-color:#77b55a;
+      border-radius:4px;
+      border:1px solid #4b8f29;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:13px;
+      font-weight:bold;
+      padding:6px 12px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #5b8a3c;
+      width: 50vw;
+      margin: 0 auto;
+      
+    }
+   
+    
+
+    input {
+      width: 60vw;
+      margin: 0 auto;
+      min-height: 40px;
+      font-size: 2em;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.5);
+      color: var(--main);
+      margin-bottom: 20px;
+    }
+
+    .TechPeopleCare {
+      width: 50vw;
+    }
+
+    label {
+      text-align: center;
+      padding: 10px;
+    }
+
+    iframe {
+      width: 80vw;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 2px 3px 5px 1px #222;
+      border: 4px solid var(--light);
+      margin-top: 25px;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+    .social ul {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+    }
+
+    .social img {
+      width: 25px;
+    }
+
+    footer {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+    }
+
+  </style>
   <script src="/js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+
+  </script>
   <script src="/js/plugins.js"></script>
   <!--<script src="/js/main.js"></script>-->
 
   <script>
-    $(function() {
-      $('#ir').on('click', function(e) {
+    $(function () {
+      $('#ir').on('click', function (e) {
         e.preventDefault();
-        window.location.assign("https://videollama.me/al/?tf="+$('#tf').val());
+        window.location.assign("https://videollama.me/al/?tf=" + $('#tf').val());
       });
     });
+
   </script>
 
 </body>
