@@ -101,6 +101,8 @@ $(function() {
         SHOW_POWERED_BY: true,
         AUTHENTICATION_ENABLE: false,
         SETTINGS_SECTIONS: [],
+        DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
+        DEFAULT_LOCAL_DISPLAY_NAME: '',
         OPTIMAL_BROWSER: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron' ],
     },
     //onload: openFullscreen(),
@@ -132,7 +134,8 @@ $(function() {
   function iniciarJitsi() {
     var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
     //api.executeCommand('toggleTileView');
-    api.executeCommand('toggleFilmStrip');
+    //api.executeCommand('toggleFilmStrip');
+    api.executeCommand('displayName', '');
     api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
     api.on('readyToClose', function(){ location.reload() });
     $('#fin').fadeIn();
