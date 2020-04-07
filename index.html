@@ -20,7 +20,7 @@
         <a href="/">videollama.me</a>
       </h1>
       <p class="subtitle">
-        Servicio de <a href="https://www.techpeople.care/tpc5/" target="_blank">TechPeopleCare</a> by <a href="http://tedeco.fi.upm.es/" target="_blank">TEDECO (UPM)</a> para facilitar el uso de video llamada a personas mayores utilizando como base la plataforma libre y segura <a href="https://jitsi.org/" target="_blank">jitsi</a>.
+        Servicio de <a href="https://www.techpeople.care/tpc5/" target="_blank">TechPeopleCare</a> desarrollado por <a href="http://tedeco.fi.upm.es/" target="_blank">TEDECO (UPM)</a> para facilitar el uso de video llamada a personas mayores utilizando como base la plataforma libre y segura <a href="https://jitsi.org/" target="_blank">jitsi</a>.
       </p>
     </div>
   </section>
@@ -29,7 +29,7 @@
 	<div class="container">
       <div class="columns">
         <div class="column">
-          <iframe src="https://www.youtube.com/embed/BnIWqInR3qQ" width="100%" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img id="video" src="img/video-play.jpg" width="100%">
         </div>
         <div class="column">
 
@@ -140,6 +140,10 @@
       $('#telegram').on('click', function (e) {
         e.preventDefault();
         window.open('https://t.me/share/url?url='+encodeURIComponent($('#direccion').val()), '_blank');
+      });
+
+      $('#video').on('click', function(e) {
+        $(this).replaceWith('<iframe src="https://www.youtube.com/embed/BnIWqInR3qQ?autoplay=1" width="100%" height="'+$(this).height()+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
       });
       
     });
