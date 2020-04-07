@@ -51,15 +51,19 @@
            </div>
 
            <div id="paso2">
-           <div class="field">
            <label class="label is-large" for="tf">
              El enlace para entrar en vuestra sala es:
            </label>
-           <div class="control has-icons-left">
+           <div class="field has-addons">
+           <div class="control is-expanded">
              <input class="input is-large" type="text" id="direccion" disabled>
-             <span class="icon is-large is-left">
-               <i class="fas fa-phone fa-xs"></i>
-             </span>
+           </div>
+           <div class="control">
+             <button class="button is-large" id="copiar" data-clipboard-target="#direccion">
+               <span class="icon">
+                 <i class="far fa-copy"></i>
+               </span>
+             </button>
            </div>
            </div>
            <label class="label is-large">
@@ -100,6 +104,7 @@
   </div>
 </section>
 
+  <script src="js/clipboard.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>
     window.jQuery || document.write('<script src="/js/vendor/jquery-3.4.1.min.js"><\/script>')
@@ -107,6 +112,8 @@
 
   <script>
     $(function () {
+
+      new ClipboardJS('#copiar');
 
       $('#siguiente').on('click', function (e) {
         var tf = parseInt($('#tf').val(), 10);
