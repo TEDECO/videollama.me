@@ -21,21 +21,32 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <link rel="manifest" href="/img/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#000000">
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <!--<link rel="stylesheet" href="/css/main.css">-->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <!--<link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">-->
 
 <style>
 
-  html, body, #video, #inicio {
+  p {
+    padding-bottom: 10px;
+  }
+
+  ol {
+    padding-left: 30px;
+  }
+
+  html, body, #video, #inicio, #ayuda {
     background-color:#000;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    color: #eee;
   }
 
   #inicio img {
@@ -49,7 +60,7 @@
     cursor: pointer;
   }
 
-  #video, #fin {
+  #video, #fin, #ayuda {
     display: none;
   }
 
@@ -65,7 +76,14 @@
     cursor: pointer;
   }
 
-
+  #ayuda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.5em;
+    z-index: 2;
+  }
 </style>
 
 </head>
@@ -79,17 +97,31 @@
     <img src="../img/dedito.gif" width="200" height="200">
   </div>
 
+  <div id="ayuda">
+    
+  <section class="section">
+    <div class="container">
+    <p>Es la primera vez que accedes con este dispositivo a esta sala.</p>
+    <p>Si se trata del móvil de la persona mayor, recuerda crear un icono de acceso directo en el Escritorio para facilitarle el acceso:</p>
+    <ol>
+      <li>Despliega el menú del navegador en la esquina superior derecha:<br><img src="../img/ayuda1.jpg"></li>
+      <li>Elige la opción "Añadir a pantalla de inicio"<br><img src="../img/ayuda2.jpg"></li>
+      <li>Pulsa "Añadir"<br><img src="../img/ayuda3.jpg"></li>
+    </ol>
+    <div class="buttons is-right"><button class="button is-large" id="continuar">Continuar</button></div>
+    </div>
+  </section>
+  </div>
+
   <div id="video"></div>
 
   <div id="fin">
     <img src="/img/colgar.png" width="100" height="100">
   </div>
 
-  <script src="/js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="/js/plugins.js"></script>
-  <!--<script src="/js/main.js"></script>-->
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 
 
 <script src='https://meet.jit.si/external_api.js'></script>
@@ -129,6 +161,24 @@ $(function() {
     return sala;
   }
 
+  function hasVisitadoSala() {
+    var galletas = document.cookie.split(';');
+    for(var i=0;i < galletas.length;i++) {
+      var galleta = galletas[i].split('=');
+      if ((galleta.length == 2) && (galleta[0] == "salas")) {
+        galleta = decodeURIComponent(galleta[1]);
+        console.log("Has visitado estas salas: "+galleta);
+        var sala = dameSala();
+        if (galleta.indexOf(sala) > -1) {
+          return true;
+        } else {
+          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; path=/";
+        }
+      }
+    }
+    return false;
+  }
+
   function aPantallaCompleta() {
     if (!document.fullscreenElement &&    // alternative standard method
         !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
@@ -159,6 +209,11 @@ $(function() {
   }
 
   // MAIN
+  console.log("hasVisitadoSala() -> "+hasVisitadoSala());
+  $('#ayuda').fadeIn();
+  $('#continuar').on('click', function(e) {
+    $('#ayuda').fadeOut();
+  });
   $('#inicio img').on('click', function(e) {
     aPantallaCompleta();
     if ($('#video').is(':hidden')) {
