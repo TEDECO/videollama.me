@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="39px" height="37px" viewBox="0 0 39 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>heart</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="heart" transform="translate(0.000000, 1.000000)">
-            <path d="M23.6,6 C20.2,6 17.3,8.7 16,11.6 C14.7,8.7 11.8,6 8.4,6 C3.8,6 0,9.8 0,14.4 C0,23.8 9.5,26.3 16,35.6 C22.1,26.3 32,23.5 32,14.4 C32,9.8 28.2,6 23.6,6 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
-            <path d="M24,4.08827228 C27.2360398,3.76654413 29.8049473,4.32427384 31.7067225,5.76146141 C33.6084978,7.19864897 34.7062569,9.9448285 35,14" id="Path-2" stroke="#979797" stroke-width="2"></path>
-            <path d="M27,0.0882722798 C30.2360398,-0.233455866 32.8049473,0.324273843 34.7067225,1.76146141 C36.6084978,3.19864897 37.7062569,5.9448285 38,10" id="Path-2" stroke="#979797" stroke-width="2"></path>
-        </g>
-    </g>
-</svg>
+        <svg width="39px" height="37px" viewBox="0 0 39 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+          <title>heart</title>
+          <desc>Created with Sketch.</desc>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="heart" transform="translate(0.000000, 1.000000)">
+                  <path d="M23.6,6 C20.2,6 17.3,8.7 16,11.6 C14.7,8.7 11.8,6 8.4,6 C3.8,6 0,9.8 0,14.4 C0,23.8 9.5,26.3 16,35.6 C22.1,26.3 32,23.5 32,14.4 C32,9.8 28.2,6 23.6,6 Z" id="Path" fill="#00bc96" fill-rule="nonzero"></path>
+                  <path d="M24,4.08827228 C27.2360398,3.76654413 29.8049473,4.32427384 31.7067225,5.76146141 C33.6084978,7.19864897 34.7062569,9.9448285 35,14" id="Path-2" stroke="#979797" stroke-width="2"></path>
+                  <path d="M27,0.0882722798 C30.2360398,-0.233455866 32.8049473,0.324273843 34.7067225,1.76146141 C36.6084978,3.19864897 37.7062569,5.9448285 38,10" id="Path-2" stroke="#979797" stroke-width="2"></path>
+              </g>
+          </g>
+      </svg>
