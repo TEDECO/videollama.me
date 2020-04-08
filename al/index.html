@@ -163,12 +163,13 @@ $(function() {
 
   function hasVisitadoSala() {
     var galletas = document.cookie.split(';');
+    var sala = dameSala();
+    if (document.cookie.indexOf('salas=') < 0) document.cookie = "salas="+encodeURIComponent(sala)+"; path=/";
     for(var i=0;i < galletas.length;i++) {
       var galleta = galletas[i].split('=');
       if ((galleta.length == 2) && (galleta[0] == "salas")) {
         galleta = decodeURIComponent(galleta[1]);
-        console.log("Has visitado estas salas: "+galleta);
-        var sala = dameSala();
+        console.log("Has visitado estas salas previamente: "+galleta);
         if (galleta.indexOf(sala) > -1) {
           return true;
         } else {
@@ -178,6 +179,7 @@ $(function() {
     }
     return false;
   }
+
 
   function aPantallaCompleta() {
     if (!document.fullscreenElement &&    // alternative standard method
@@ -210,7 +212,7 @@ $(function() {
 
   // MAIN
   console.log("hasVisitadoSala() -> "+hasVisitadoSala());
-  $('#ayuda').fadeIn();
+  if !(hasVisitadoSala()) $('#ayuda').fadeIn();
   $('#continuar').on('click', function(e) {
     $('#ayuda').fadeOut();
   });
