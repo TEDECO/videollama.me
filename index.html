@@ -72,6 +72,7 @@
              </span>
            </div>
            </div>
+           <div id="salasanteriores" class="label is-medium"></div>
            <div class="control has-text-right" style="margin-top:50px;">
               <button class="button is-large is-link is-rounded is-fullwidth" id="siguiente">Siguiente</button>
            </div>
@@ -93,16 +94,16 @@
              </button>
            </div>
            </div>
-           <label class="label is-large">
+           <!--<label class="label is-large">
              Puedes enviarlo al resto de familiares:
            </label>
            <p class="buttons">
-             <!--<button id="correo" class="button is-medium">
+             <button id="correo" class="button is-medium">
                <span class="icon">
                  <i class="fas fa-envelope"></i>
                </span>
                <span>por correo electrónico</span>
-             </button>-->
+             </button>
              <button id="whatsapp" class="button is-medium">
                <span class="icon">
                  <i class="fab fa-whatsapp"></i>
@@ -115,11 +116,11 @@
                </span>
                <span>por telegram</span>
              </button>
-           </p>
-           <label class="label is-large">
-             O entrar directamente desde un navegador Chrome o móvil Android:
+           </p>-->
+           <label class="label is-medium">
+             Copia el enlace para compartirlo con el resto de familiares y que podáis entrar juntos en la sala desde un navegador Chrome o móvil Android.
            </label>
-           <div class="buttons has-addons is-centered">
+           <div class="buttons has-addons is-centered" style="margin-top: 50px;">
               <button class="button is-large is-rounded" id="anterior">Anterior</button>
               <button class="button is-large is-link is-rounded" id="ir">Entrar</button>
            </div>
@@ -139,6 +140,30 @@
 
   <script>
     $(function () {
+
+      function leerSalasAnteriores() {
+        var galletas = document.cookie.split(';');
+        for(var i=0;i < galletas.length;i++) {
+          var galleta = galletas[i].split('=');
+          if ((galleta.length == 2) && (galleta[0] == "salas")) {
+            return decodeURIComponent(galleta[1]);
+          }
+        }
+        return "";
+      }
+
+      function salasAnterioresHTML(salas) {
+        var html = "No has visitado ninguna sala previamente desde este dispositivo."
+        if (salas != "") {
+          salas = '<a class="sala">'+salas.split(',').join('</a>, <a class="sala">')+'</a>';
+          salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });';
+          html = "Has visitado anteriormente las siguientes salas desde este dispositivo: "+salas;
+        }
+        return html;
+      }
+
+
+      $('#salasanteriores').html(salasAnterioresHTML(leerSalasAnteriores()));
 
       var portapapeles = new ClipboardJS('#copiar');
 
