@@ -153,7 +153,7 @@
       }
 
       function salasAnterioresHTML(salas) {
-        var html = "No has visitado ninguna sala previamente desde este dispositivo."
+        var html = ""
         if (salas != "") {
           salas = '<a class="sala">'+salas.split(',').join('</a>, <a class="sala">')+'</a>';
           salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });';
