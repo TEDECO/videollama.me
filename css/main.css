@@ -334,8 +334,7 @@ border-top-left-radius: 350px;
 {
   box-shadow: 0px 10px 14px -7px #3e7327;
   background: linear-gradient(to bottom, #00bc96 5%, #1a826a 100%);
-
-border-radius: 4px;
+border-radius: 100px;
 border: 1px solid #4b8f29;
 display: inline-block;
 cursor: pointer;
@@ -346,11 +345,14 @@ font-weight: bold;
 padding: 6px 12px;
 text-decoration: none;
 text-shadow: 0px 1px 0px #5b8a3c;
-
-margin: 0 auto;
-max-width: 300px;
 height: 60px;
 }
+.button.is-link {background: linear-gradient(to bottom, #00bc96 5%, #1a826a 100%);
+}
+em {color: var(--dark);
+  font-style: normal;
+  font-size: 1.2em;}
+  .field.has-addons{padding-bottom: 15px;}
 .label.is-large {
   font-size: 1.5rem;
   font-weight: 300;
@@ -358,7 +360,7 @@ height: 60px;
   padding-bottom: 50px;
   text-align: justify;
 }
-#paso1{padding: 5vh 0px 0px 5vw;}
+#paso1,#paso2{padding: 5vh 0px 0px 5vw;}
 #heart {filter: drop-shadow(2px 1px 1px #7a7a7a);}
 .input {
   border-radius: 10px;
@@ -393,10 +395,14 @@ height: 60px;
   text-align: center;
   padding: 1vh 2vw 0vh 2vw;
     }
-    #paso1 {
+    #paso1,#paso2 {
       padding: 0vh 8px 0px 4px;
   }
   .hero.is-primary.is-bold {
   border-top-left-radius: 50px;}
   .title {font-size: 2.7rem;}
+  .button.is-rounded {
+    padding-left: calc(0.9em + .25em);
+    padding-right: calc(0.9em + .25em);
+  }
   }
