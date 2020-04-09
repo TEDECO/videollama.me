@@ -12,8 +12,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;600;900&family=Roboto:wght@300;700&display=swap');
 
-   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&family=Roboto:wght@300;700&display=swap');   
+
    html {
   color: #222;
   font-size: 1em;
@@ -238,6 +239,8 @@ textarea {
   a[href^="javascript:"]:after {
     content: "";
   }
+
+
   pre {
     white-space: pre-wrap !important;
   }
@@ -271,3 +274,100 @@ textarea {
   }
 }
 
+/* Quien tiene un amigo tiene un tesoro */
+:root {
+  --main: #a2bbc9;
+  --light: #e8e6e6;
+  --second: #e3dfbf;
+  --dark: #5a7451;
+  --accent: #f0bdc4;
+}
+body {
+  background-image: url('../img/textured_paper.png');
+}
+section {
+  background-size: 20%;
+}
+a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+b {
+  color: #00bc96;
+  font-weight: 900;
+  filter: drop-shadow(0px 1px 0px #fff);
+
+}
+.title {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+font-size: 3.6rem;
+text-shadow: 7px 2px 0px white;
+}
+.subtitle
+{color: #4a4a4a;
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: center;
+  padding: 5vh 15vw 0vh 14vw;}
+  .hero.is-primary.is-bold {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,efefef+50,e5e5e5+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #efefef 50%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    box-shadow: 0px -10px 10px #c9c9c9;
+    border-top: 2px dashed #d2d2d2;
+    border-top-left-radius: 350px;
+}
+.hero.is-medium .hero-body {
+  padding-bottom: 10rem;
+  padding-top: 1rem;
+}
+#video{
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 1px #222;
+  border: 4px solid var(--light);
+}
+#siguiente 
+{
+  box-shadow: 0px 10px 14px -7px #3e7327;
+  background: linear-gradient(to bottom, #00bc96 5%, #677660 100%);
+border-radius: 4px;
+border: 1px solid #4b8f29;
+display: inline-block;
+cursor: pointer;
+color: #ffffff;
+font-family: Arial;
+font-size: 1.5em;
+font-weight: bold;
+padding: 6px 12px;
+text-decoration: none;
+text-shadow: 0px 1px 0px #5b8a3c;
+width: 50vw;
+margin: 0 auto;
+max-width: 300px;
+height: 5vh;
+}
+.label.is-large {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 41px;
+  padding-bottom: 75px;
+  text-align: justify;
+}
+#paso1{padding: 1vh 0px 0px 5vw;}
+#heart {filter: drop-shadow(2px 1px 1px #7a7a7a);}
+.input {
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 1px #aeadad;
+  border: 4px solid var(--light);
+  color: #00bc96;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: right;}
