@@ -1,3 +1,5 @@
+
+
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -11,10 +13,14 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&family=Roboto:wght@300;700&display=swap');   
+   html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+
+
 }
 
 /*
@@ -256,10 +262,12 @@ textarea {
   h3 {
     orphans: 3;
     widows: 3;
+    font-family: 'Montserrat', sans-serif;
   }
   h2,
   h3 {
     page-break-after: avoid;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
