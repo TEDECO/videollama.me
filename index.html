@@ -63,7 +63,7 @@
            <div id="paso1">
            <div class="field">
            <label class="label is-large" for="tf">
-             Escribe un número de 9 cifras que identificará vuestra sala familiar. Recomendamos usar un número de teléfono que recordéis fácilmente:
+             Escribe un número de 9 cifras que identificará vuestra sala familiar (recomendamos usar un número de teléfono que recordéis fácilmente):
            </label>
            <div class="control has-icons-left">
              <input class="input is-large" type="tel" id="tf" name="tf" pattern="[0-9]{9}">
@@ -83,7 +83,7 @@
            </label>
            <div class="field has-addons">
            <div class="control is-expanded">
-             <input class="input is-medium" type="text" id="direccion" disabled>
+             <input class="input is-medium" type="text" id="direccion" readonly>
            </div>
            <div class="control">
              <button class="button is-medium" id="copiar" data-clipboard-target="#direccion">
@@ -97,12 +97,12 @@
              Puedes enviarlo al resto de familiares:
            </label>
            <p class="buttons">
-             <button id="correo" class="button is-medium">
+             <!--<button id="correo" class="button is-medium">
                <span class="icon">
                  <i class="fas fa-envelope"></i>
                </span>
                <span>por correo electrónico</span>
-             </button>
+             </button>-->
              <button id="whatsapp" class="button is-medium">
                <span class="icon">
                  <i class="fab fa-whatsapp"></i>
@@ -140,7 +140,13 @@
   <script>
     $(function () {
 
-      new ClipboardJS('#copiar');
+      var portapapeles = new ClipboardJS('#copiar');
+
+      portapapeles.on('success', function(e) {
+        alert ('Se ha copiado con éxito la dirección '+e.text+' al portapapeles');
+        e.clearSelection();
+      });
+
 
       $('#siguiente').on('click', function (e) {
         var tf = parseInt($('#tf').val(), 10);
@@ -173,7 +179,7 @@
 
       $('#telegram').on('click', function (e) {
         e.preventDefault();
-        window.open('https://t.me/share/url?url='+encodeURIComponent($('#direccion').val()), '_blank');
+        window.open('tg://msg_url?url='+encodeURIComponent($('#direccion').val()), '_blank');
       });
 
       $('#video').on('click', function(e) {
