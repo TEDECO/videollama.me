@@ -374,10 +374,7 @@ em {color: var(--dark);
 
   font-weight: 300;}
 #paso1,#paso2{padding: 5vh 0px 0px 5vw;}
-#ayuda {
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/diamond_upholstery.png") ;
-background-size: 25px;
-}
+
 #heart {filter: drop-shadow(2px 1px 1px #7a7a7a);  animation-iteration-count: infinite; animation-duration: 3s;}
 .input {
   border-radius: 10px;
