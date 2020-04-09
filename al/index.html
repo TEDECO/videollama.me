@@ -80,9 +80,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 20px 20px 20px;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #000 !important;
     z-index: 2;
+  }
+  #ayuda p, #ayuda ol li {
+    color: #333 !important;
   }
 </style>
 
@@ -98,20 +102,19 @@
   </div>
 
   <div id="ayuda">
-    
-  <section class="section">
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">    
     <div class="container">
-    <p>Es la primera vez que accedes con este dispositivo a esta sala.</p>
-    <p>Si se trata del móvil de la persona mayor, recuerda crear un icono de acceso directo en el Escritorio para facilitarle el acceso:</p>
+    <p>Si este es el móvil o tablet para la pesona mayor, recuerde crearle un acceso directo a la videollamada en el escritorio. Hágalo en tres pasos simples:</p>
     <ol>
       <li>Despliega el menú del navegador en la esquina superior derecha:<br><img src="../img/ayuda1.jpg"></li>
       <li>Elige la opción "Añadir a pantalla de inicio"<br><img src="../img/ayuda2.jpg"></li>
       <li>Pulsa "Añadir"<br><img src="../img/ayuda3.jpg"></li>
     </ol>
-    <div class="buttons is-right"><button class="button is-large" id="continuar">Continuar</button></div>
+    <div class="buttons is-right" style="margin-top:50px;"><button class="button is-large" id="continuar">Continuar</button></div>
     </div>
-  </section>
   </div>
+</section>
 
   <div id="video"></div>
 
