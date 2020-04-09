@@ -189,7 +189,7 @@
       $('#siguiente').on('click', function (e) {
         var tf = parseInt($('#tf').val(), 10);
         if (isNaN(tf) || tf<100000000 || tf>999999999) {
-          alert ('No es un número válido');
+          alert ('No es un número válido, Pruebe con un número de 9 cifras');
         } else {
           $('#direccion').val("https://videollama.me/al/?tf=" + tf);
           $('#paso1').fadeOut(function() { $('#paso2').fadeIn(); });
