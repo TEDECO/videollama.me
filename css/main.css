@@ -194,8 +194,21 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (max-width: 600px)  {
   /* Style adjustments for viewports that meet the condition */
+  .subtitle{
+color: #4a4a4a;
+font-size: 1.55rem;
+font-weight: 500;
+line-height: 1.675;
+text-align: center;
+padding: 1vh 2vw 0vh 2vw;
+  }
+  #paso1 {
+    padding: 0vh 8px 0px 4px;
+}
+.hero.is-primary.is-bold {
+border-top-left-radius: 50px;}
 }
 
 @media print,
@@ -283,7 +296,7 @@ textarea {
   --accent: #f0bdc4;
 }
 body {
-  background-image: url('../img/textured_paper.png');
+ background-color: aliceblue;
 }
 section {
   background-size: 20%;
@@ -303,7 +316,7 @@ b {
 .title {
   font-family: 'Lobster', cursive;
   text-align: center;
-font-size: 3.6rem;
+font-size: 3.4rem;
 text-shadow: 7px 2px 0px white;
 }
 .subtitle
@@ -320,10 +333,11 @@ background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #efefef 50%
 background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 background: radial-gradient(ellipse at center,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-    box-shadow: 0px -10px 10px #c9c9c9;
-    border-top: 2px dashed #d2d2d2;
-    border-top-left-radius: 350px;
+background-image: url('../img/textured_paper.png');
+background: rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/foil.png") repeat scroll 0% 
+box-shadow: 0px -10px 10px #c9c9c9;
+border-top: 7px inset #00bc96;
+border-top-left-radius: 350px;
 }
 .hero.is-medium .hero-body {
   padding-bottom: 10rem;
@@ -333,11 +347,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   border-radius: 10px;
   box-shadow: 2px 3px 5px 1px #222;
   border: 4px solid var(--light);
+  margin-top: 5vh;
 }
 #siguiente 
 {
   box-shadow: 0px 10px 14px -7px #3e7327;
-  background: linear-gradient(to bottom, #00bc96 5%, #677660 100%);
+  background: linear-gradient(to bottom, #00bc96 5%, #1a826a 100%);
+
 border-radius: 4px;
 border: 1px solid #4b8f29;
 display: inline-block;
@@ -349,10 +365,10 @@ font-weight: bold;
 padding: 6px 12px;
 text-decoration: none;
 text-shadow: 0px 1px 0px #5b8a3c;
-width: 50vw;
+
 margin: 0 auto;
 max-width: 300px;
-height: 5vh;
+height: 60px;
 }
 .label.is-large {
   font-size: 1.5rem;
@@ -361,7 +377,7 @@ height: 5vh;
   padding-bottom: 75px;
   text-align: justify;
 }
-#paso1{padding: 1vh 0px 0px 5vw;}
+#paso1{padding: 5vh 0px 0px 5vw;}
 #heart {filter: drop-shadow(2px 1px 1px #7a7a7a);}
 .input {
   border-radius: 10px;
@@ -371,3 +387,9 @@ height: 5vh;
   font-weight: 600;
   letter-spacing: 2px;
   text-align: right;}
+  .footer {
+    background-color: #00bc96;
+    padding: 1rem 1.5rem 1rem;}
+    .footer a {
+      color:white;
+    }
