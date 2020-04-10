@@ -100,9 +100,9 @@
     font-weight: bold;
     color: #333 !important;
     z-index: 2;
-    background-image: url("../img/fondo-mosaico.png") ;
-    overflow-y: auto;
+    background-image: url("../img/fondo-mosaico.png");
     background-size: 25px;
+    overflow-y: auto;
   }
   #ayuda p, #ayuda ol li {
     color: #333 !important;
@@ -114,9 +114,6 @@
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
   <div id="inicio">
     <img src="../img/dedito.gif" width="300" height="300">
@@ -132,7 +129,7 @@
       <li>Elige la opción <b>"Añadir a pantalla de inicio"</b><br><img src="../img/ayuda2.jpg"></li>
       <li>Pulsa <b>"Añadir"</b><br><img src="../img/ayuda3.jpg"></li>
     </ol>
-    <div class="buttons is-right" style="margin-top:50px;"><button class="button is-large is-success" id="continuar">Continuar</button></div>
+    <div class="buttons is-right" style="margin-top:50px;"><button class="button is-large is-success is-rounded" id="continuar">Continuar</button></div>
     </div>
   </div>
 </section>
@@ -199,7 +196,7 @@ $(function() {
         if (galleta.indexOf(sala) > -1) {
           return true;
         } else {
-          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; path=/";
+          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; expires=2147483647; path=/";
         }
       }
     }
