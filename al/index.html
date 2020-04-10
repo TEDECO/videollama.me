@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>videollama.me</title>
-  <meta name="description" content="Sistema de videoconferencia basado en jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos.">
+  <meta name="description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
@@ -27,10 +27,22 @@
 
   <meta property="og:title" content="Videollama a los tuyos de forma fácil, libre y segura">
   <meta property="og:url" content="https://videollama.me/">
-  <meta property="og:image" content="https://videollama.me/img/facebook-share.png" />
-  <meta property="og:description" content="Videollama.me es un sistema de videoconferencia basado en el software libre Jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos. Está desarrollado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
+  <meta property="og:image" content="https://videollama.me/img/facebook-share.png" /> <!-- facebook -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://videollama.me/img/corazon.png" /> <!-- whatsapp y telegram -->
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <meta property="og:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
+
+  <meta name="twitter:card" content="summary_large_image"> <!-- twitter -->
+  <!--<meta name="twitter:site" content="@yourwebsite">
+  <meta name="twitter:creator" content="@yourtwitterhandle">-->
+  <meta name="twitter:title" content="Videollama a los tuyos de forma fácil, libre y segura">
+  <meta name="twitter:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
+  <meta name="twitter:image" content="https://videollama.me/img/facebook-share.png">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../css/bulma.min.css">
   <!--<link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">-->
 
@@ -54,14 +66,14 @@
   }
 
   #inicio img {
-position: absolute;
-top: 50%;
-left: 60%;
-width: 300px;
-height: 300px;
-margin-top: -100px;
-margin-left: -100px;
-cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    cursor: pointer;
   }
 
   #video, #fin, #ayuda {
@@ -86,11 +98,11 @@ cursor: pointer;
     left: 0;
     font-size: 1.4em;
     font-weight: bold;
-    color: #000 !important;
+    color: #333 !important;
     z-index: 2;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/diamond_upholstery.png") ;
-background-size: 25px;
-height: auto;
+    background-image: url("../img/fondo-mosaico.png") ;
+    overflow-y: auto;
+    background-size: 25px;
   }
   #ayuda p, #ayuda ol li {
     color: #333 !important;
@@ -107,7 +119,7 @@ height: auto;
   <![endif]-->
 
   <div id="inicio">
-    <img src="../img/dedito.gif" width="200" height="200">
+    <img src="../img/dedito.gif" width="300" height="300">
   </div>
 
   <div id="ayuda">
@@ -120,7 +132,7 @@ height: auto;
       <li>Elige la opción <b>"Añadir a pantalla de inicio"</b><br><img src="../img/ayuda2.jpg"></li>
       <li>Pulsa <b>"Añadir"</b><br><img src="../img/ayuda3.jpg"></li>
     </ol>
-    <div class="buttons is-right" style="margin-top:50px;"><button class="button is-large" id="continuar">Continuar</button></div>
+    <div class="buttons is-right" style="margin-top:50px;"><button class="button is-large is-success" id="continuar">Continuar</button></div>
     </div>
   </div>
 </section>
@@ -214,7 +226,7 @@ $(function() {
     //api.executeCommand('toggleTileView');
     //api.executeCommand('toggleFilmStrip');
     api.executeCommand('displayName', '');
-    api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
+    api.executeCommand('avatarUrl', 'https://videollama.me/img/corazon.png');
     api.on('readyToClose', function(){ location.reload() });
     $('#fin').fadeIn();
     $('#fin img').on('click', function(e) {
