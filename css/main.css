@@ -295,16 +295,18 @@ b {
 .title {
   font-family: 'Lobster', cursive;
   text-align: center;
-font-size: 3.4rem;
+font-size: 3rem;
 text-shadow: 7px 2px 0px white;
+margin-bottom: 1em !important
 }
 .subtitle
 {color: #4a4a4a;
-  font-size: 1.55rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.75;
+  line-height: 1.6;
   text-align: center;
-  padding: 5vh 15vw 0vh 14vw;}
+  /*padding: 5vh 15vw 0vh 14vw;*/
+}
   .hero.is-primary.is-bold {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,efefef+50,e5e5e5+100 */
 background: #ffffff; /* Old browsers */
@@ -313,8 +315,8 @@ background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#efefef 5
 background: radial-gradient(ellipse at center,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 /* background-image: url('../img/textured_paper.png'); */
-background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/foil.png") ;
-background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/diamond_upholstery.png") ;
+background-image: url("../img/foil.png") ;
+background-image: url("../img/diamond_upholstery.png") ;
 background-size: 25px;
 box-shadow: 0px -10px 10px #c9c9c9;
 border-top: 7px inset #00bc96;
@@ -354,11 +356,11 @@ em {color: var(--dark);
   font-size: 1.2em;}
   .field.has-addons{padding-bottom: 15px;}
 .label.is-large {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 35px;
-  padding-bottom: 50px;
-  text-align: justify;
+  padding-bottom: 20px;
+  text-align: left;
 }
 .field.has-addons .control:first-child:not(:only-child) .input, #copiar {
   border-radius: 10px;
@@ -372,8 +374,11 @@ em {color: var(--dark);
 }
 .label {
 
-  font-weight: 300;}
-#paso1,#paso2{padding: 5vh 0px 0px 5vw;}
+  font-weight: 300;
+}
+#paso1,#paso2 {
+padding: 5vh 0px 0px 0vw;
+}
 
 #heart {filter: drop-shadow(2px 1px 1px #7a7a7a);  animation-iteration-count: infinite; animation-duration: 3s;}
 .input {
