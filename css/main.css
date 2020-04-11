@@ -326,7 +326,7 @@ border-top-left-radius: 350px;
   padding-bottom: 10rem;
   padding-top: 1rem;
 }
-#video{
+.video{
   border-radius: 10px;
   box-shadow: 2px 3px 5px 1px #222;
   border: 4px solid var(--light);
