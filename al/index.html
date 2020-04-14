@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>videollama.me</title>
-  <meta name="description" content="Sistema de videoconferencia basado en jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos.">
+  <meta name="description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
@@ -27,12 +27,24 @@
 
   <meta property="og:title" content="Videollama a los tuyos de forma fácil, libre y segura">
   <meta property="og:url" content="https://videollama.me/">
-  <meta property="og:image" content="https://videollama.me/img/facebook-share.png" />
-  <meta property="og:description" content="Videollama.me es un sistema de videoconferencia basado en el software libre Jitsi enfocado a simplificar su uso para personas mayores sin conocimientos tecnológicos. Está desarrollado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
+  <meta property="og:image" content="https://videollama.me/img/facebook-share.png" /> <!-- facebook -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://videollama.me/img/corazon.png" /> <!-- whatsapp y telegram -->
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <meta property="og:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
+
+  <meta name="twitter:card" content="summary_large_image"> <!-- twitter -->
+  <!--<meta name="twitter:site" content="@yourwebsite">
+  <meta name="twitter:creator" content="@yourtwitterhandle">-->
+  <meta name="twitter:title" content="Videollama a los tuyos de forma fácil, libre y segura">
+  <meta name="twitter:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
+  <meta name="twitter:image" content="https://videollama.me/img/facebook-share.png">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <!--<link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="/css/main.css">-->
+  <link rel="stylesheet" href="../css/bulma.min.css">
+  <!--<link rel="stylesheet" href="../css/normalize.css">-->
+  <link rel="stylesheet" href="../css/main.css">
 
 <style>
 
@@ -53,15 +65,19 @@
     color: #eee;
   }
 
+  #ayuda {
+    background-color: #f1f7ff;
+  }
+
   #inicio img {
-position: absolute;
-top: 50%;
-left: 60%;
-width: 300px;
-height: 300px;
-margin-top: -100px;
-margin-left: -100px;
-cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    cursor: pointer;
   }
 
   #video, #fin, #ayuda {
@@ -86,50 +102,106 @@ cursor: pointer;
     left: 0;
     font-size: 1.4em;
     font-weight: bold;
-    color: #000 !important;
-    z-index: 2;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/diamond_upholstery.png") ;
-background-size: 25px;
-height: auto;
-  }
-  #ayuda p, #ayuda ol li {
     color: #333 !important;
-    line-height: 55px;
-    font-weight: 300;
+    z-index: 2;
+    /*background-image: url("../img/fondo-mosaico.png");
+    background-size: 25px;*/
+    overflow-y: auto;
+  }
+  #texto-ayuda a {
+    display: block;
+    text-align: center;
+  }
+  #texto-ayuda h2, #texto-ayuda h1, #texto-ayuda p {
+    color: #333 !important;
+    text-align: center;
+  }
+  #paso1, #paso2, #paso3 {
+    display: none;
   }
 </style>
 
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
   <div id="inicio">
-    <img src="../img/dedito.gif" width="200" height="200">
+    <img src="../img/dedito.gif" width="300" height="300">
   </div>
 
   <div id="ayuda">
-<section>
-  <div class="hero-body">    
+
+  <section class="section">
     <div class="container">
-    <p>Si este es el móvil o tablet para la persona mayor, recuerde <b>crear un acceso directo</b> a la videollamada en el escritorio.</br> Hágalo en tres pasos simples:</p>
-    <ol>
-      <li>Despliega el menú del navegador en la esquina superior derecha:<br><img src="../img/ayuda1.jpg"></li>
-      <li>Elige la opción <b>"Añadir a pantalla de inicio"</b><br><img src="../img/ayuda2.jpg"></li>
-      <li>Pulsa <b>"Añadir"</b><br><img src="../img/ayuda3.jpg"></li>
-    </ol>
-    <div class="buttons is-right" style="margin-top:50px;"><button class="button is-large" id="continuar">Continuar</button></div>
+      <p class="title">
+        <strong>Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor</strong>  
+      </p>
+      <p class="subtitle">
+        El objetivo es que sea capaz de conectarse por videollamada simplemente pulsando 4 botones:
+      </p>
+<div class="columns">
+<div class="column">
+<div class="columns is-mobile" style="text-align:center;font-weight:bold;">
+  <div class="column"><img src="../img/corazon.png" width="100%"><br>El icono del corazón para acceder a la aplicación</div>
+  <div class="column"><img src="../img/llamada.png" width="100%"><br>El botón verde para iniciar la llamada</div>
+</div>
+</div>
+<div class="column">
+<div class="columns is-mobile" style="text-align:center;font-weight:bold;">
+  <div class="column"><img src="../img/colgar.png" width="100%"><br>El botón rojo para colgar la llamada</div>
+  <div class="column"><img src="../img/ayuda/circulo.jpg" width="100%"><br>El "círculo" de la barra de estado para volver a empezar</div>
+</div>
+</div>
+</div>
     </div>
+  </section>
+
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+	<div id="texto-ayuda" class="container">
+
+<h1 class="title">Lo mínimo</h1>
+
+<h2 class="subtitle">1º Crear un icono en la pantalla de inicio, eliminar el resto y dejarlo centrado en la pantalla</h2>
+<a href="#paso2" class="desplegar">¿Cómo lo hago?</a>
+<div id="paso2"><div class="columns">
+  <div class="column"><img src="../img/ayuda/paso1-1.jpg" width="100%"></div>
+  <div class="column"><img src="../img/ayuda/paso2-2.jpg" width="100%"></div>
+  <div class="column"><img src="../img/ayuda/paso2-3.jpg" width="100%"></div>
+</div></div>
+
+<h2 class="subtitle">2º Abrir la aplicación por primera vez para permitir el uso de la cámara y el micrófono</h2>
+<a href="#paso3" class="desplegar">¿Cómo lo hago?</a>
+<div id="paso3"><div class="columns">
+  <div class="column"><img src="../img/ayuda/paso3-1.jpg" width="100%"></div>
+  <div class="column"><img src="../img/ayuda/paso3-2.jpg" width="100%"></div>
+  <div class="column"><img src="../img/ayuda/paso3-3.jpg" width="100%"></div>
+</div></div>
+
+<h1 class="title" style="margin-top:50px;">Otras recomendaciones</h1>
+
+<h2 class="subtitle">Desactivar las notificaciones de todas las aplicaciones</h2>
+
+<h2 class="subtitle">Desactivar el bloqueo de pantalla</h2>
+
+<h2 class="subtitle">Desactivar el PIN en opciones de seguridad</h2>
+
+<h2 class="subtitle">Establecer el ahorro de energía a 10 minutos o más</h2>
+
+<div class="control" style="margin-top:50px;">
+  <button class="button is-large is-link is-rounded is-fullwidth" id="continuar">Continuar</button>
+</div>
+
+	</div>
   </div>
 </section>
-</div>
+
+  </div><!-- ayuda -->
 
   <div id="video"></div>
 
   <div id="fin">
-    <img src="/img/colgar.png" width="100" height="100">
+    <img src="../img/colgar.png" width="100" height="100">
   </div>
 
   <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
@@ -148,6 +220,7 @@ $(function() {
     height: '100%',
     configOverwrite: {
         defaultLanguage: 'es',
+        disableThirdPartyRequests: true,
         disableDeepLinking: true
     },
     interfaceConfigOverwrite: {
@@ -186,7 +259,7 @@ $(function() {
         if (galleta.indexOf(sala) > -1) {
           return true;
         } else {
-          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; path=/";
+          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; expires=2147483647; path=/";
         }
       }
     }
@@ -214,7 +287,7 @@ $(function() {
     //api.executeCommand('toggleTileView');
     //api.executeCommand('toggleFilmStrip');
     api.executeCommand('displayName', '');
-    api.executeCommand('avatarUrl', 'https://videollama.me/img/abuelos.jpg');
+    api.executeCommand('avatarUrl', 'https://videollama.me/img/corazon.png');
     api.on('readyToClose', function(){ location.reload() });
     $('#fin').fadeIn();
     $('#fin img').on('click', function(e) {
@@ -225,6 +298,15 @@ $(function() {
 
   // MAIN
   if (!hasVisitadoSala()) $('#ayuda').fadeIn();
+  $('.desplegar').on('click', function(e) {
+    e.preventDefault();
+    var objetivo = $(this).attr('href');
+    if ($(objetivo).css('display') !== 'none') {
+      $(objetivo).slideUp();
+    } else {
+      $(objetivo).slideDown();
+    }
+  });
   $('#continuar').on('click', function(e) {
     $('#ayuda').fadeOut();
   });
