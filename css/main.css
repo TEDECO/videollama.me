@@ -380,7 +380,11 @@ em {color: var(--dark);
 padding: 5vh 0px 0px 0vw;
 }
 
-#heart {filter: drop-shadow(2px 1px 1px #7a7a7a);  animation-iteration-count: infinite; animation-duration: 3s;}
+#heart {  
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  width: 5rem;
+  margin-top: -30px;}
 .input {
   border-radius: 10px;
   box-shadow: 2px 3px 5px 1px #aeadad;
