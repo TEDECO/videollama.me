@@ -136,7 +136,11 @@
               <button class="button is-large is-rounded" id="anterior">Anterior</button>
               <button class="button is-large is-link is-rounded" id="ir">Entrar</button>
            </div>
+           <div style="text-align:center; margin-top:25px">
+             <a id="entrarexperto" href="">Entrar en modo experto (con todos los botones)</a>
+           </div> 
            </div>
+
 
         </div>
       </div>
@@ -211,6 +215,11 @@
       $('#ir').on('click', function (e) {
         e.preventDefault();
         window.location.assign($('#direccion').val());
+      });
+
+      $('#entrarexperto').on('click', function (e) {
+        e.preventDefault();
+        window.location.assign($('#direccion').val()+'&experto=1');
       });
 
       $('#correo').on('click', function (e) {

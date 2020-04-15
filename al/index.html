@@ -242,12 +242,38 @@ $(function() {
     //onload: openFullscreen(),
     parentNode: document.getElementById('video')
   };
+  const opciones_experto = {
+    roomName: dameSala(),
+    width: '100%',
+    height: '100%',
+    configOverwrite: {
+        defaultLanguage: 'es',
+        disableThirdPartyRequests: true,
+        disableDeepLinking: true
+    },
+    interfaceConfigOverwrite: {
+        DEFAULT_BACKGROUND: '#612d620',
+        TOOLBAR_ALWAYS_VISIBLE: true,
+        SHOW_JITSI_WATERMARK: false,
+        SHOW_WATERMARK_FOR_GUESTS: false,
+        SHOW_POWERED_BY: true,
+        AUTHENTICATION_ENABLE: false,
+        DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
+        DEFAULT_LOCAL_DISPLAY_NAME: '',
+    },
+    //onload: openFullscreen(),
+    parentNode: document.getElementById('video')
+  };
 
   // Funciones auxiliares
   function dameSala() {
     var sala = window.location.href.split('?tf=');
     (sala.length == 2)?sala=sala[1]:sala='TEDECO';
-    return sala;
+    return sala.split('&')['0'];
+  }
+
+  function esModoExperto() {
+     return (window.location.href.split('&experto').length == 2);
   }
 
   function hasVisitadoSala() {
@@ -286,17 +312,21 @@ $(function() {
   }
 
   function iniciarJitsi() {
-    var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
+    if (esModoExperto()) {
+      var api = new JitsiMeetExternalAPI(servidorjitsi, opciones_experto);
+    } else {
+      var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
+      $('#fin').fadeIn();
+      $('#fin img').on('click', function(e) {
+        e.preventDefault();
+        api.executeCommand('hangup');
+      });
+    }
     //api.executeCommand('toggleTileView');
     //api.executeCommand('toggleFilmStrip');
     api.executeCommand('displayName', '');
     api.executeCommand('avatarUrl', 'https://videollama.me/img/corazon.png');
     api.on('readyToClose', function(){ location.reload() });
-    $('#fin').fadeIn();
-    $('#fin img').on('click', function(e) {
-      e.preventDefault();
-      api.executeCommand('hangup');
-    });
   }
 
   // MAIN
