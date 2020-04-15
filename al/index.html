@@ -330,7 +330,7 @@ $(function() {
   }
 
   // MAIN
-  if (!hasVisitadoSala()) $('#ayuda').fadeIn();
+  if (!hasVisitadoSala() && !esModoExperto()) $('#ayuda').fadeIn();
   $('.desplegar').on('click', function(e) {
     e.preventDefault();
     var objetivo = $(this).attr('href');
