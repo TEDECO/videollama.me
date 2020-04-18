@@ -436,3 +436,37 @@ padding: 5vh 0px 0px 0vw;
     padding-right: calc(0.9em + .25em);
   }
   }
+
+
+  ul {
+    list-style-image: none;
+    margin-left: 20px;
+  }
+
+  ul li {
+    background-image: url('../img/corazon.png');
+    background-size: 40px;
+    text-indent: 50px;
+    background-repeat: no-repeat;
+  }
+  
+  p, li {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+  }
+
+  h3, h2 {
+    font-family: 'Lobster';
+    margin-top: 50px;
+    font-weight: 800 !important;
+  }
+  #heart {
+    margin-top: 0;
+  }
+  header {
+    padding-top: 30px;
+  }
+  header h2 {
+    text-align:center; font-size:2em; margin-top:-30px;
+  }
