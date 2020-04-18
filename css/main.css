@@ -12,15 +12,18 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-   @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;600;900&family=Roboto:wght@300;700&display=swap');
+   /* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;600;900&family=Roboto:wght@300;700&display=swap'); */
 
 
    html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: 'Roboto', sans-serif;
+}
 
+@font-face {
+  font-family: 'Lobster';
+  src:url("../fonts/Lobster-Regular.ttf") format('truetype');
 
 }
 
@@ -257,12 +260,15 @@ textarea {
   h3 {
     orphans: 3;
     widows: 3;
-    font-family: 'Montserrat', sans-serif;
+
+   
+    
   }
   h2,
   h3 {
     page-break-after: avoid;
-    font-family: 'Montserrat', sans-serif;
+
+    
   }
 }
 
@@ -294,6 +300,7 @@ b {
 }
 .title {
   font-family: 'Lobster', cursive;
+
   text-align: center;
 font-size: 3rem;
 text-shadow: 7px 2px 0px white;
