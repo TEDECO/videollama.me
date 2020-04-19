@@ -49,4 +49,4 @@ gulp.task("borrar-idioma-es", function() {
 
 
 // tarea por defecto
-gulp.task('default', gulp.series('limpiar', 'copiar-assets', 'traducir-html', 'borrar-idioma-es'));
+gulp.task('default', gulp.series('limpiar', 'copiar-assets', 'traducir-html', 'copiar-idioma-es', 'borrar-idioma-es'));
