@@ -6,11 +6,12 @@
     "ayudaSlug": "help",
     "legalSlug": "legal",
     "llamadaSlug": "to",
+    "dominio": "easyvideocall.me",
     "titulo": "Videollama a los tuyos de forma fácil, libre y segura | videollama.me",
     "descripcion": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
     "tituloRRSS": "Videollama a los tuyos de forma fácil, libre y segura",
     "descripcionRRSS": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
-    "urlRRSS": "https://videollama.me",
+    "urlRRSS": "https://easyvideocall.me",
     "urlImagenHorizontalRRSS" : "https://videollama.me/img/facebook-share2.png",
     "urlImagenCuadradaRRSS": "https://videollama.me/img/corazon.png",
     "portadaIntro": "En esta web podrás crear una sala virtual donde reunirte con los tuyos por videoconferencia. <strong>La persona con dificultades tecnológicas debe acceder a través de un icono en la pantalla de inicio</strong> directamente a la sala para evitar que tenga que escribir ningún número. <a href='/ayuda'>¿Cómo preparar un móvil o tablet?</a>",
@@ -40,5 +41,8 @@
     "ayudaRecomendacion1": "Desactivar las notificaciones de todas las aplicaciones",
     "ayudaRecomendacion2": "Desactivar el bloqueo de pantalla",
     "ayudaRecomendacion3": "Desactivar el PIN en opciones de seguridad",
-    "ayudaRecomendacion4": "Establecer el ahorro de energía a 10 minutos o más"
+    "ayudaRecomendacion4": "Establecer el ahorro de energía a 10 minutos o más",
+    "llamadaAyudaTitulo": "Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor",
+    "llamadaBotonContinuar": "Continuar",
+    "llamadaNombreFamiliar": "Familiar"
 }

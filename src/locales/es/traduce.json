@@ -6,6 +6,7 @@
     "ayudaSlug": "ayuda",
     "legalSlug": "legal",
     "llamadaSlug": "al",
+    "dominio": "videollama.me",
     "titulo": "Videollama a los tuyos de forma fácil, libre y segura | videollama.me",
     "descripcion": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
     "tituloRRSS": "Videollama a los tuyos de forma fácil, libre y segura",
@@ -40,5 +41,8 @@
     "ayudaRecomendacion1": "Desactivar las notificaciones de todas las aplicaciones",
     "ayudaRecomendacion2": "Desactivar el bloqueo de pantalla",
     "ayudaRecomendacion3": "Desactivar el PIN en opciones de seguridad",
-    "ayudaRecomendacion4": "Establecer el ahorro de energía a 10 minutos o más"
+    "ayudaRecomendacion4": "Establecer el ahorro de energía a 10 minutos o más",
+    "llamadaAyudaTitulo": "Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor",
+    "llamadaBotonContinuar": "Continuar",
+    "llamadaNombreFamiliar": "Familiar"
 }
