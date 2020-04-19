@@ -12,11 +12,17 @@ var gulp = require('gulp')
 
 // limpiar
 gulp.task('limpiar', function() {
-  return del(['document_root/*'])
+  return del(['document_root/*']);
+});
+
+// copiamos assets a document_root
+gulp.task("copiar-assets", function() {
+   return gulp.src("src/assets/**")
+      .pipe(gulp.dest("document_root"));
 });
 
 // traducir-html
-gulp.task("traducirhtml", function() {
+gulp.task("traducir-html", function() {
    return gulp.src(['src/plantillas/*.html', 'src/plantillas/*/*.html'])
       .pipe(fileInclude({ prefix: '@@', basepath: 'src/includes'}))
       .pipe(i18n({
@@ -29,6 +35,18 @@ gulp.task("traducirhtml", function() {
       .pipe(gulp.dest('document_root/'));
 });
 
-// tarea por defecto
+// copiamos el idioma por defecto es a document_root
+gulp.task("copiar-idioma-es", function() {
+   return gulp.src("document_root/es/**")
+      .pipe(gulp.dest("document_root"));
+});
 
-gulp.task('default', gulp.series('limpiar', 'traducirhtml'));
+
+// copiamos el idioma por defecto es a document_root
+gulp.task("borrar-idioma-es", function() {
+   return del("document_root/es");
+});
+
+
+// tarea por defecto
+gulp.task('default', gulp.series('limpiar', 'copiar-assets', 'traducir-html', 'borrar-idioma-es'));

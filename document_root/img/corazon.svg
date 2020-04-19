@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="corazon.svg"
+   inkscape:export-filename="/home/tastytune/Desktop/DO/videollama.me/img/heart.png"
+   inkscape:export-xdpi="970.51855"
+   inkscape:export-ydpi="970.51855"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>heart</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="1.22"
+     inkscape:cx="76.517489"
+     inkscape:cy="18.5"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="heart" />
+  <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+  <title
+     id="title2">heart</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Page-1"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+     transform="translate(0,263)">
+    <g
+       id="heart"
+       transform="translate(0,1)">
+      <g
+         id="g1061"
+         transform="matrix(7.2845741,0,0,7.2845741,7.3770492,-240.94395)">
+        <path
+           style="fill:#00bc96;fill-rule:nonzero"
+           inkscape:connector-curvature="0"
+           id="Path"
+           d="M 23.6,6 C 20.2,6 17.3,8.7 16,11.6 14.7,8.7 11.8,6 8.4,6 3.8,6 0,9.8 0,14.4 0,23.8 9.5,26.3 16,35.6 22.1,26.3 32,23.5 32,14.4 32,9.8 28.2,6 23.6,6 Z" />
+        <path
+           style="stroke:#979797;stroke-width:2"
+           inkscape:connector-curvature="0"
+           id="Path-2"
+           d="M 24,4.0882723 C 27.23604,3.7665441 29.804947,4.3242738 31.706723,5.7614614 33.608498,7.198649 34.706257,9.9448285 35,14" />
+        <path
+           style="stroke:#979797;stroke-width:2"
+           inkscape:connector-curvature="0"
+           id="path8"
+           d="M 27,0.08827228 C 30.23604,-0.23345587 32.804947,0.32427384 34.706722,1.7614614 36.608498,3.198649 37.706257,5.9448285 38,10" />
+      </g>
+    </g>
+  </g>
+</svg>

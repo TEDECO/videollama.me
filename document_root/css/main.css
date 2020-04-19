@@ -1,0 +1,472 @@
+
+
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   /* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;600;900&family=Roboto:wght@300;700&display=swap'); */
+
+
+   html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src:url("../fonts/Lobster-Regular.ttf") format('truetype');
+
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+
+   
+    
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+
+    
+  }
+}
+
+/* Quien tiene un amigo tiene un tesoro */
+:root {
+  --main: #a2bbc9;
+  --light: #e8e6e6;
+  --second: #e3dfbf;
+  --dark: #086b57;
+  --accent: #f0bdc4;
+}
+body {
+ background-color: aliceblue;
+}
+section {
+  background-size: 20%;
+}
+a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+b {
+  color: #00bc96;
+  font-weight: 900;
+  filter: drop-shadow(0px 1px 0px #fff);
+
+}
+.title {
+  font-family: 'Lobster', cursive;
+
+  text-align: center;
+font-size: 3rem;
+text-shadow: 7px 2px 0px white;
+margin-bottom: 1em !important
+}
+.subtitle
+{color: #4a4a4a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  /*padding: 5vh 15vw 0vh 14vw;*/
+}
+  .hero.is-primary.is-bold {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,efefef+50,e5e5e5+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #efefef 50%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #ffffff 0%,#efefef 50%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/* background-image: url('../img/textured_paper.png'); */
+background-image: url("../img/foil.png") ;
+background-image: url("../img/diamond_upholstery.png") ;
+background-size: 25px;
+box-shadow: 0px -10px 10px #c9c9c9;
+border-top: 7px inset #00bc96;
+border-top-left-radius: 350px;
+}
+.hero.is-medium .hero-body {
+  padding-bottom: 10rem;
+  padding-top: 1rem;
+}
+.video{
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 1px #222;
+  border: 4px solid var(--light);
+  margin-top: 5vh;
+}
+#siguiente 
+{
+  box-shadow: 0px 10px 14px -7px #3e7327;
+  background: linear-gradient(to bottom, #00bc96 5%, #1a826a 100%);
+border-radius: 100px;
+border: 1px solid #4b8f29;
+display: inline-block;
+cursor: pointer;
+color: #ffffff;
+font-family: Arial;
+font-size: 1.5em;
+font-weight: bold;
+padding: 6px 12px;
+text-decoration: none;
+text-shadow: 0px 1px 0px #5b8a3c;
+height: 60px;
+}
+.button.is-link {background: linear-gradient(to bottom, #00bc96 5%, #1a826a 100%);
+}
+em {color: var(--dark);
+  font-style: normal;
+  font-size: 1.2em;}
+  .field.has-addons{padding-bottom: 15px;}
+.label.is-large {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 35px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.field.has-addons .control:first-child:not(:only-child) .input, #copiar {
+  /*border-radius: 10px;*/
+  box-shadow: 2px 3px 5px 1px #aeadad;
+  border: 4px solid var(--light);
+  
+}
+#copiar:hover {
+  background-color: var(--dark);
+  color:white;
+}
+.label {
+
+  font-weight: 300;
+}
+#paso1,#paso2 {
+padding: 5vh 0px 0px 0vw;
+}
+
+#heart {  
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  width: 5rem;
+  margin-top: -30px;}
+.input {
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 1px #aeadad;
+  border: 4px solid var(--light);
+  color: var(--dark);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: left;}
+  .footer {
+    background-color: #00bc96;
+    padding: 1rem 1.5rem 1rem;
+    border-top: 2px solid #007d64;
+    box-shadow: -6px -57px 92px 55px #fff;}
+    .footer a {
+      color:white;
+    }
+
+    /* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (max-width: 600px)  {
+    /* Style adjustments for viewports that meet the condition */
+    .subtitle{
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: center;
+  padding: 1vh 2vw 0vh 2vw;
+    }
+    #paso1,#paso2 {
+      padding: 0vh 8px 0px 4px;
+  }
+  .hero.is-primary.is-bold {
+  border-top-left-radius: 50px;}
+  .title {font-size: 2.7rem;}
+  .button.is-rounded {
+    padding-left: calc(0.9em + .25em);
+    padding-right: calc(0.9em + .25em);
+  }
+  }
+
+
+  ul {
+    list-style-image: none;
+    margin-left: 20px;
+  }
+
+  ul li {
+    background-image: url('../img/corazon.png');
+    background-size: 40px;
+    text-indent: 50px;
+    background-repeat: no-repeat;
+  }
+  
+  p, li {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+  }
+
+  h3, h2 {
+    font-family: 'Lobster';
+    margin-top: 50px;
+    font-weight: 800 !important;
+  }
+  #heart {
+    margin-top: 0;
+  }
+  header {
+    padding-top: 30px;
+  }
+  header h2 {
+    text-align:center; font-size:2em; margin-top:-30px;
+  }
