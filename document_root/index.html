@@ -88,8 +88,7 @@
 
 <div class="container">
   <p class="subtitle">
-    En esta web podrás crear una sala virtual donde reunirte con los tuyos por videoconferencia. 
-    <strong>La persona con dificultades tecnológicas debe acceder a través de un icono en la pantalla de inicio</strong> directamente a la sala para evitar que tenga que escribir ningún número. <a href="/ayuda">¿Cómo preparar un móvil o tablet?</a>
+    En esta web podrás crear una sala virtual donde reunirte con los tuyos por videoconferencia. <strong>La persona con dificultades tecnológicas debe acceder a través de un icono en la pantalla de inicio</strong> directamente a la sala para evitar que tenga que escribir ningún número. <a href='/ayuda'>¿Cómo preparar un móvil o tablet?</a>
   </p>
 </div>
 
@@ -106,6 +105,7 @@
            <div class="field">
            <label class="label is-large" for="tf">
              Escribe un <b>número de 9 cifras</b> que identificará vuestra sala familiar (recomendamos usar un número de teléfono que recordéis fácilmente):
+             
            </label>
            <div class="control has-icons-left">
              <input class="input is-large" type="tel" id="tf" name="tf" pattern="[0-9]{9}">
@@ -160,7 +160,7 @@
              </button>
            </p>-->
            <label class="label is-medium">
-             Copia el enlace para compartirlo con el resto de familiares y que podáis entrar juntos en la sala desde un navegador <em>Chrome</em> o móvil <em>Android.</em>
+             Copia el enlace para compartirlo con el resto de familiares y que podáis entrar juntos en la sala desde un navegador <em>Chrome</em> o móvil <em>Android.</em>            
            </label>
            <div class="buttons has-addons is-centered" style="margin-top: 50px;">
               <button class="button is-large is-rounded" id="anterior">Anterior</button>
@@ -181,10 +181,10 @@
   
 <footer class="footer">
   <p class="subtitle">
-    Servicio de <a href="https://www.techpeople.care/tpc5/" target="_blank">TechPeopleCare</a> diseñado por <a href="http://tedeco.fi.upm.es/" target="_blank">TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href="https://jitsi.org/" target="_blank">jitsi</a>.
+    Servicio de <a href='https://www.techpeople.care/tpc5/' target='_blank'>TechPeopleCare</a> diseñado por <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href='https://jitsi.org/' target='_blank'>jitsi</a>.
   </p>
   <div class="content has-text-centered is-medium">
-    <div><strong><a href="/ayuda/">ayuda</a> | <a href="mailto:hola@videollama.me">hola@videollama.me</a> | <a href="/legal/">privacidad</a></strong></div>
+    <div><strong><a href='/ayuda/'>ayuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacidad</a></strong></div>
   </div>
 </footer>
 
@@ -214,7 +214,7 @@
         var html = ""
         if (salas != "") {
           salas = '<a class="sala">'+salas.split(',').join('</a>, <a class="sala">')+'</a>';
-          salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });</script>';
+          salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });';
           html = "Has visitado anteriormente las siguientes salas desde este dispositivo: "+salas;
         }
         return html;
@@ -226,7 +226,7 @@
       var portapapeles = new ClipboardJS('#copiar');
 
       portapapeles.on('success', function(e) {
-        alert ('Se ha copiado con éxito la dirección '+e.text+' al portapapeles');
+        alert ('Se ha copiado con éxito la dirección al portapapeles: '+e.text');
         e.clearSelection();
       });
 
@@ -234,7 +234,7 @@
       $('#siguiente').on('click', function (e) {
         var tf = parseInt($('#tf').val(), 10);
         if (isNaN(tf) || tf<100000000 || tf>999999999) {
-          alert ('No es un número válido, Pruebe con un número de 9 cifras');
+          alert ('No es un número válido. Prueba con un número de 9 cifras');
         } else {
           $('#direccion').val("https://videollama.me/al/?tf=" + tf);
           $('#paso1').fadeOut(function() { $('#paso2').fadeIn(); });
