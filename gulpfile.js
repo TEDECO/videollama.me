@@ -3,6 +3,7 @@
 //
 var gulp = require('gulp')
   , del = require('del')
+  , fileInclude = require('gulp-file-include')
   , i18n = require('gulp-html-i18n');
 
 //
@@ -17,7 +18,7 @@ gulp.task('limpiar', function() {
 // traducir-html
 gulp.task("traducirhtml", function() {
    return gulp.src(['src/plantillas/*.html', 'src/plantillas/*/*.html'])
-      /*.pipe(fileInclude({ prefix: '@@', baseDir: '/partials'}))*/
+      .pipe(fileInclude({ prefix: '@@', basepath: 'src/includes'}))
       .pipe(i18n({
          langDir: './src/locales',
          /*defaultLang: 'es',*/

@@ -3,47 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${{ _filepath_ }}$  videollama.me  ${{ _filename_ }}$</title>
-    <meta name="description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>${{ traduce.titulo }}$</title>
+    <meta name="description" content="${{ traduce.descripcion }}$">
 
-  <meta property="og:title" content="Videollama a los tuyos de forma fácil, libre y segura">
-  <meta property="og:url" content="https://videollama.me/">
-  <meta property="og:image" content="https://videollama.me/img/facebook-share2.png" /> <!-- facebook -->
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image" content="https://videollama.me/img/corazon.png" /> <!-- whatsapp y telegram -->
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
-  <meta property="og:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.">
+    @@include('metas-compartir.html')
 
-  <meta name="twitter:card" content="summary_large_image"> <!-- twitter -->
-  <meta name="twitter:site" content="@videollamame">
-  <meta name="twitter:creator" content="@videollamame">
-  <meta name="twitter:title" content="Videollama a los tuyos de forma fácil, libre y segura">
-  <meta name="twitter:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.">
-  <meta name="twitter:image" content="https://videollama.me/img/facebook-share2.png">
+    @@include('estilos-header.html')
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="./css/bulma.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <style>
 #paso2 {
   display:none;
@@ -51,20 +17,9 @@
 </style>
   </head>
   <body>
-  <header>
-    <div class="container">
-      <h1 class="title">
-      <img id="heart"  class="animated pulse delay-2s" src="img/corazon.png">
-        <a class="titulo" href="/">videollama.me</a>
-      </h1>
-      <h2>
-        <a href="https://twitter.com/videollamame" title="Perfil oficial de twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/videollama.me/" title="Página oficial de facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/videollama.me/" title="Perfil oficial en instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/TEDECO/videollama.me/" title="Repositorio en github" target="_blank"><i class="fab fa-github"></i></a>
-      </h2>
-     </div>
-  </header>
+
+
+@@include('cabecera.html')
 
 <div class="container">
   <p class="subtitle">
@@ -158,17 +113,9 @@
   </div>
 </section>
 
-<footer class="footer">
-  <p class="subtitle">
-    Servicio de <a href="https://www.techpeople.care/tpc5/" target="_blank">TechPeopleCare</a> diseñado por <a href="http://tedeco.fi.upm.es/" target="_blank">TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href="https://jitsi.org/" target="_blank">jitsi</a>.
-  </p>
-  <div class="content has-text-centered is-medium">
-    <div><strong><a href="/ayuda/">ayuda</a> | <a href="mailto:hola@videollama.me">hola@videollama.me</a> | <a href="/legal/">privacidad</a></strong></div>
-  </div>
-</footer>
+  @@include('pie.html')
 
-  <script src="js/clipboard.min.js"></script>
-  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  @@include('jsbody.html')
 
   <script>
     $(function () {
@@ -188,7 +135,7 @@
         var html = ""
         if (salas != "") {
           salas = '<a class="sala">'+salas.split(',').join('</a>, <a class="sala">')+'</a>';
-          salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });';
+          salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });</script>';
           html = "Has visitado anteriormente las siguientes salas desde este dispositivo: "+salas;
         }
         return html;

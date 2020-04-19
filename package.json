@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TEDECO/videollama.me",
   "dependencies": {
+    "gulp-file-include": "^2.1.1",
     "gulp-html-i18n": "^0.16.0"
   },
   "devDependencies": {

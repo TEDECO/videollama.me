@@ -1,50 +1,14 @@
-<!doctype html>
-<html class="no-js" lang="${{ traduce.langCode }}$">
+<!DOCTYPE html lang="${{ traduce.langCode }}$">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${{ traduce.titulo }}$</title>
+    <meta name="description" content="${{ traduce.descripcion }}$">
 
-<head>
-  <meta charset="utf-8">
-  <title>videollama.me</title>
-  <meta name="description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas mayores sin conocimientos tecnológicos. Está diseñado por el grupo de investigación TEDECO de la UPM dentro del proyecto TechPeopleCare.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    @@include('metas-compartir.html')
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-  <link rel="manifest" href="/img/manifest.json">
-  <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
-  <meta name="theme-color" content="#000000">
-
-  <meta property="og:title" content="Videollama a los tuyos de forma fácil, libre y segura">
-  <meta property="og:url" content="https://videollama.me/">
-  <meta property="og:image" content="https://videollama.me/img/facebook-share2.png" /> <!-- facebook -->
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image" content="https://videollama.me/img/corazon.png" /> <!-- whatsapp y telegram -->
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
-  <meta property="og:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.">
-
-  <meta name="twitter:card" content="summary_large_image"> <!-- twitter -->
-  <meta name="twitter:site" content="@videollamame">
-  <meta name="twitter:creator" content="@videollamame">
-  <meta name="twitter:title" content="Videollama a los tuyos de forma fácil, libre y segura">
-  <meta name="twitter:description" content="Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.">
-  <meta name="twitter:image" content="https://videollama.me/img/facebook-share2.png">
-  
-  <link rel="stylesheet" href="../css/bulma.min.css">
-  <!--<link rel="stylesheet" href="../css/normalize.css">-->
-  <link rel="stylesheet" href="../css/main.css">
+    @@include('estilos-header.html')
 
 <style>
 
@@ -207,9 +171,8 @@
     <img src="../img/colgar.png" width="100" height="100">
   </div>
 
-  <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+
+@@include('jsbody.html')
 
 
 <script src='https://meet.jit.si/external_api.js'></script>

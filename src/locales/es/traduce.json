@@ -4,5 +4,12 @@
 	"nativeName": "Español",
     "ayudaSlug": "ayuda",
     "legalSlug": "legal",
-    "llamadaSlug": "al"
+    "llamadaSlug": "al",
+    "titulo": "Videollama a los tuyos de forma fácil, libre y segura | videollama.me",
+    "descripcion": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
+    "tituloRRSS": "Videollama a los tuyos de forma fácil, libre y segura",
+    "descripcionRRSS": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
+    "urlRRSS": "https://videollama.me",
+    "urlImagenHorizontalRRSS" : "https://videollama.me/img/facebook-share2.png",
+    "urlImagenCuadradaRRSS": "https://videollama.me/img/corazon.png"
 }
