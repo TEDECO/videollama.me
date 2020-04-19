@@ -147,7 +147,7 @@
       var portapapeles = new ClipboardJS('#copiar');
 
       portapapeles.on('success', function(e) {
-        alert ('${{ traduce.portadaCopiadoConExito }}$'+e.text');
+        alert ('${{ traduce.portadaCopiadoConExito }}$'+e.text);
         e.clearSelection();
       });
 
