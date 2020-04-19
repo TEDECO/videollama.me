@@ -1,4 +1,4 @@
-<!DOCTYPE html lang="es">
+<!DOCTYPE html lang="fr">
 <html>
   <head>
     <meta charset="utf-8">
@@ -60,10 +60,66 @@
 
 
 <style>
-  #ayuda p, #ayuda ol li {
-    color: #333 !important;
+
+  p {
+    padding-bottom: 10px;
+  }
+
+  ol {
+    padding-left: 30px;
+  }
+
+  html, body, #video, #inicio, #ayuda {
+    background-color:#000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #eee;
+  }
+
+  #ayuda {
+    background-color: #f1f7ff;
+  }
+
+  #inicio img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    cursor: pointer;
+  }
+
+  #video, #fin, #ayuda {
+    display: none;
+  }
+
+  #fin img {
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    cursor: pointer;
+  }
+
+  #ayuda {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 1.4em;
-    font-weight: 300;
+    font-weight: bold;
+    color: #333 !important;
+    z-index: 2;
+    /*background-image: url("../img/fondo-mosaico.png");
+    background-size: 25px;*/
+    overflow-y: auto;
   }
   #texto-ayuda a {
     display: block;
@@ -80,32 +136,21 @@
     max-width: 150px;
   }
 </style>
-  </head>
-  <body>
 
+</head>
 
-  <header>
+<body>
+
+  <div id="inicio">
+    <img src="../img/dedito.gif" width="300" height="300">
+  </div>
+
+  <div id="ayuda">
+
+  <section class="section">
     <div class="container">
-      <h3 style="text-align:right;"><a href="/">Castellano</a> | <a href="/en">English</a> | <a href="/fr">Français</a></h3>
-      <h1 class="title">
-      <img id="heart"  class="animated pulse delay-2s" src="/img/corazon.png">
-        <a class="titulo" href="/">videollama.me</a>
-      </h1>
-      <h2>
-        <a href="https://twitter.com/videollamame" title="Perfil oficial de twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/videollama.me/" title="Página oficial de facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/videollama.me/" title="Perfil oficial en instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/TEDECO/videollama.me/" title="Repositorio en github" target="_blank"><i class="fab fa-github"></i></a>
-      </h2>
-     </div>
-  </header>
-
-
-
-<section class="section">
-<div class="container">
-      <p class="subtitle">
-        <strong>¿Cómo preparar el móvil o tablet de la persona mayor?</strong>  
+      <p class="title">
+        <strong>Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor</strong>  
       </p>
       <p class="subtitle">
         El objetivo es que la persona mayor sea capaz de conectarse por videollamada simplemente pulsando 4 botones:
@@ -159,42 +204,173 @@
 
 <h2 class="subtitle">Establecer el ahorro de energía a 10 minutos o más</h2>
 
+<div class="control" style="margin-top:50px;">
+  <button class="button is-large is-link is-rounded is-fullwidth" id="continuar">Continuar</button>
+</div>
+
 	</div>
   </div>
 </section>
 
-  
-<footer class="footer">
-  <p class="subtitle">
-    Servicio de <a href='https://www.techpeople.care/tpc5/' target='_blank'>TechPeopleCare</a> diseñado por <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href='https://jitsi.org/' target='_blank'>jitsi</a>.
-  </p>
-  <div class="content has-text-centered is-medium">
-    <div><strong><a href='/ayuda/'>ayuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacidad</a></strong></div>
+  </div><!-- ayuda -->
+
+  <div id="video"></div>
+
+  <div id="fin">
+    <img src="/img/colgar.png" width="100" height="100">
   </div>
-</footer>
 
 
 
-  
   <script src="/js/clipboard.min.js"></script>
   <script src="/js/vendor/jquery-3.4.1.min.js"></script>
 
 
 
 
-  <script>
-    $(function () {
-      $('.desplegar').on('click', function(e) {
-        e.preventDefault();
-        var objetivo = $(this).attr('href');
-        if ($(objetivo).css('display') !== 'none') {
-          $(objetivo).slideUp();
-        } else {
-          $(objetivo).slideDown();
-        }
-      });
-    });
-  </script>
+<script src='https://meet.jit.si/external_api.js'></script>
+<script>
+$(function() {
+  // Opciones de configuración de jitsi
+  const servidorjitsi = 'meet.jit.si';
+  const opciones = {
+    roomName: dameSala(),
+    width: '100%',
+    height: '100%',
+    configOverwrite: {
+        defaultLanguage: 'fr',
+        disableThirdPartyRequests: true,
+        disableDeepLinking: true
+    },
+    interfaceConfigOverwrite: {
+        DEFAULT_BACKGROUND: '#612d620',
+        TOOLBAR_ALWAYS_VISIBLE: true,
+        TOOLBAR_BUTTONS: [],
+        SHOW_JITSI_WATERMARK: false,
+        SHOW_WATERMARK_FOR_GUESTS: false,
+        SHOW_POWERED_BY: true,
+        AUTHENTICATION_ENABLE: false,
+        SETTINGS_SECTIONS: [],
+        DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
+        DEFAULT_LOCAL_DISPLAY_NAME: '',
+        OPTIMAL_BROWSER: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron' ],
+    },
+    //onload: openFullscreen(),
+    parentNode: document.getElementById('video')
+  };
+  const opciones_experto = {
+    roomName: dameSala(),
+    width: '100%',
+    height: '100%',
+    configOverwrite: {
+        defaultLanguage: 'fr',
+        disableThirdPartyRequests: true,
+        disableDeepLinking: true
+    },
+    interfaceConfigOverwrite: {
+        DEFAULT_BACKGROUND: '#612d620',
+        TOOLBAR_ALWAYS_VISIBLE: true,
+        SHOW_JITSI_WATERMARK: false,
+        SHOW_WATERMARK_FOR_GUESTS: false,
+        SHOW_POWERED_BY: true,
+        AUTHENTICATION_ENABLE: false,
+        DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
+        DEFAULT_LOCAL_DISPLAY_NAME: '',
+    },
+    //onload: openFullscreen(),
+    parentNode: document.getElementById('video')
+  };
 
-  </body>
+  // Funciones auxiliares
+  function dameSala() {
+    var sala = window.location.href.split('?tf=');
+    (sala.length == 2)?sala=sala[1]:sala='TEDECO';
+    return sala.split('&')['0'];
+  }
+
+  function esModoExperto() {
+     return (window.location.href.split('&experto').length == 2);
+  }
+
+  function hasVisitadoSala() {
+    var galletas = document.cookie.split(';');
+    var sala = dameSala();
+    if (document.cookie.indexOf('salas=') < 0) document.cookie = "salas="+encodeURIComponent(sala)+"; path=/";
+    for(var i=0;i < galletas.length;i++) {
+      var galleta = galletas[i].split('=');
+      if ((galleta.length == 2) && (galleta[0] == "salas")) {
+        galleta = decodeURIComponent(galleta[1]);
+        console.log("Has visitado estas salas previamente: "+galleta);
+        if (galleta.indexOf(sala) > -1) {
+          return true;
+        } else {
+          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; expires=2147483647; path=/";
+        }
+      }
+    }
+    return false;
+  }
+
+
+  function aPantallaCompleta() {
+    if (!document.fullscreenElement &&    // alternative standard method
+        !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) {
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      }
+    }
+  }
+
+  function iniciarJitsi() {
+    if (esModoExperto()) {
+      var api = new JitsiMeetExternalAPI(servidorjitsi, opciones_experto);
+    } else {
+      var api = new JitsiMeetExternalAPI(servidorjitsi, opciones);
+      $('#fin').fadeIn();
+      $('#fin img').on('click', function(e) {
+        e.preventDefault();
+        api.executeCommand('hangup');
+      });
+    }
+    //api.executeCommand('toggleTileView');
+    //api.executeCommand('toggleFilmStrip');
+    api.executeCommand('displayName', '');
+    api.executeCommand('avatarUrl', 'https://videollama.me/img/corazon.jpg');
+    api.on('readyToClose', function(){ location.reload() });
+  }
+
+  // MAIN
+  if (!hasVisitadoSala() && !esModoExperto()) $('#ayuda').fadeIn();
+  $('.desplegar').on('click', function(e) {
+    e.preventDefault();
+    var objetivo = $(this).attr('href');
+    if ($(objetivo).css('display') !== 'none') {
+      $(objetivo).slideUp();
+    } else {
+      $(objetivo).slideDown();
+    }
+  });
+  $('#continuar').on('click', function(e) {
+    $('#ayuda').fadeOut();
+  });
+  $('#inicio img').on('click', function(e) {
+    aPantallaCompleta();
+    if ($('#video').is(':hidden')) {
+       $('#inicio').fadeOut();
+       $('#video').fadeIn();
+       iniciarJitsi();
+    }
+  });
+});
+
+</script>
+
+</body>
+
 </html>
