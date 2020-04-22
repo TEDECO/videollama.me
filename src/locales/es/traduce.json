@@ -1,71 +1,102 @@
-
-{
-	"langCode": "es",
-    "raiz": "/",
-	"nativeName": "Español",
-    "ayudaSlug": "ayuda",
-    "legalSlug": "legal",
-    "llamadaSlug": "al",
-    "dominio": "videollama.me",
-    "titulo": "Videollama a los tuyos de forma fácil, libre y segura | videollama.me",
-    "descripcion": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
-    "tituloRRSS": "Videollama a los tuyos de forma fácil, libre y segura",
-    "descripcionRRSS": "Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
-    "urlRRSS": "https://videollama.me",
-    "urlImagenHorizontalRRSS" : "https://videollama.me/img/facebook-share2.png",
-    "urlImagenCuadradaRRSS": "https://videollama.me/img/corazon.png",
-    "portadaIntro": "En esta web podrás crear una sala virtual donde reunirte con los tuyos por videoconferencia. <strong>La persona con dificultades tecnológicas debe acceder a través de un icono en la pantalla de inicio</strong> directamente a la sala para evitar que tenga que escribir ningún número. <a href='/ayuda'>¿Cómo preparar un móvil o tablet?</a>",
-    "portadaPaso1": "Escribe un <b>número de 9 cifras</b> que identificará vuestra sala familiar (recomendamos usar un número de teléfono que recordéis fácilmente):",
-    "portadaBotonSiguiente": "Siguiente",
-    "portadaPaso2": "El enlace para entrar en vuestra sala es:",
-    "portadaPaso2Copiar": "Copia el enlace para compartirlo con el resto de familiares y que podáis entrar juntos en la sala desde un navegador <em>Chrome</em> o móvil <em>Android.</em>",
-    "portadaBotonAnterior": "Anterior",
-    "portadaBotonEntrar": "Entrar",
-    "portadaEntrarModoExperto": "Entrar en modo experto (con todos los botones)",
-    "portadaCopiadoConExito": "Se ha copiado con éxito la dirección al portapapeles: ",
-    "portadaSalasVisitadas": "Has visitado anteriormente las siguientes salas desde este dispositivo: ",
-    "portadaNoEsNumeroValido": "No es un número válido. Prueba con un número de 9 cifras",
-    "pieIntro": "Servicio de <a href='https://www.techpeople.care/tpc5/' target='_blank'>TechPeopleCare</a> diseñado por <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href='https://jitsi.org/' target='_blank'>jitsi</a>.",
-    "pieEnlaces": "<a href='/ayuda/'>ayuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacidad</a>",
-    "ayudaTitulo": "¿Cómo preparar el móvil o tablet de la persona mayor?",
-    "ayudaSubtitulo": "El objetivo es que la persona mayor sea capaz de conectarse por videollamada simplemente pulsando 4 botones:",
-    "ayudaBotonCorazon": "El icono del corazón para acceder a la aplicación",
-    "ayudaBotonVerde": "El botón verde para iniciar la llamada",
-    "ayudaBotonRojo": "El botón rojo para colgar la llamada",
-    "ayudaBotonCirculo": "El 'círculo' de la barra de estado para volver a empezar",
-    "ayudaMinimo": "Lo mínimo",
-    "ayudaMinimo1": "1º Crear un icono en la pantalla de inicio, eliminar el resto y dejarlo centrado en la pantalla",
-    "ayudaMinimo2": "2º Abrir la aplicación por primera vez para permitir el uso de la cámara y el micrófono",
-    "ayudaComoLoHago": "¿Cómo lo hago?",
-    "ayudaRecomendaciones": "Otras recomendaciones",
-    "ayudaRecomendacion1": "Desactivar las notificaciones de todas las aplicaciones",
-    "ayudaRecomendacion2": "Desactivar el bloqueo de pantalla",
-    "ayudaRecomendacion3": "Desactivar el PIN en opciones de seguridad",
-    "ayudaRecomendacion4": "Establecer el ahorro de energía a 10 minutos o más",
-    "llamadaAyudaTitulo": "Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor",
-    "llamadaBotonContinuar": "Continuar",
-    "llamadaNombreFamiliar": "Familiar",
-    "legalPrivacidadTitulo": "Política de privacidad",
-    "legalPrivacidadSubtitulo1": "1. ¿Quién es el responsable de tratamiento de tus datos?",
-    "legalPrivacidadSubtitulo2": "2. ¿Qué datos recogemos?",
-    "legalPrivacidadDato1": "Marca de tiempo del acceso a la página o recurso",
-    "legalPrivacidadDato2": "IP de origen y página desde la que accedes (Referer)",
-    "legalPrivacidadDato3": "Identificación del navegador que realiza la petición (User Agent)",
-    "legalPrivacidadDato4": "Identificador de la sala en la que entras y si entras en modo experto",
-    "legalPrivacidadSubtitulo3": "3. ¿Con qué finalidad tratamos tus datos?",
-    "legalPrivacidadFin1": "Para generar estadísticas del uso del servicio",
-    "legalPrivacidadFin2": "Para cumplir con la normativa de conservación de logs",
-    "legalPrivacidadFin3": "Para resolver incidencias en el servicio",
-    "legalPrivacidadFin4": "Para mejorar la experiencia de usuario",
-    "legalPrivacidadSubtitulo4": "4. Destinatarios de cesiones o transferencia de datos",
-    "legalPrivacidad4p1": "Dada la naturaleza del servicio utilizamos la infraestructura de <em>meet.jit.si</em>, a través de su API, con la opción de configuración <em>disableThirdPartyRequests</em> para que no utilice el seguimiento con Google Analitycs que tienen activado por defecto.",
-    "legalPrivacidad4p2": "Una vez entras en la sala, estás en sus servidores, cuya política de privacidad puedes encontrarla en <a href='https://jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/</a>",
-    "legalPrivacidad4p3": "El resto de librerías se cargan desde nuestro servidor, sin hacer uso de CDNs ni otros servidores.",
-    "legalPrivacidadSubtitulo5": "5. Cookies",
-    "legalPrivacidad5p1": "Usamos una cookie propia donde almacenamos los identificadores de las salas en las que has entrado desde ese dispositivo, que sirve tanto para poder mostrártelas en la portada, como para no mostrarte las instrucciones para configurar el dispositivo cada vez que entres.",
-    "legalPrivacidad5p2": "Todos los vídeos incrustados se realizan con <em>youtube-nocookie</em>, por lo que tampoco se produce seguimiento por parte de terceros hasta que le das a reproducir el vídeo.",
-    "legalPrivacidad5p3": "No usamos más cookies, ni propias ni de terceros.",
-    "legalLicenciasTitulo": "Derechos de autor y licencias",
-    "legalLicenciasP1": "Toda la web y sus contenidos están liberados en el repositorio bajo la licencia <em>GNU AFFERO GENERAL PUBLIC LICENSE</em>, cuyo texto completo puedes encontrarlo en:",
-    "legalLicenciasP2": "<a href='https://github.com/TEDECO/videollama.me/blob/master/LICENSE'>LICENSE (github)</a>"
-}
+{	
+	"langCode":"es",
+	"raiz":"/",
+	"nativeName":"Español",
+	"ayudaSlug":"ayuda",
+	"legalSlug":"legal",
+	"llamadaSlug":"al",
+	"dominio":"videollama.me",
+	"titulo":"Videollama a los tuyos de forma fácil, libre y segura | videollama.me",
+	"descripcion":"Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
+	"tituloRRSS":"Videollama a los tuyos de forma fácil, libre y segura",
+	"descripcionRRSS":"Sistema de videoconferencia basado en el software libre Jitsi simplificado para personas con dificultades en el manejo de nuevas tecnologías.",
+	"urlRRSS":"https://videollama.me",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"En esta web podrás crear una sala virtual donde reunirte con los tuyos por videoconferencia. <strong>La persona con dificultades tecnológicas debe acceder a través de un icono en la pantalla de inicio</strong> directamente a la sala para evitar que tenga que escribir ningún número. <a href='/ayuda'>¿Cómo preparar un móvil o tablet?</a>",
+	"portadaPaso1":"Escribe un <b>número de 9 cifras</b> que identificará vuestra sala familiar (recomendamos usar un número de teléfono que recordéis fácilmente):",
+	"portadaBotonSiguiente":"Siguiente",
+	"portadaPaso2":"El enlace para entrar en vuestra sala es:",
+	"portadaPaso2Copiar":"Copia el enlace para compartirlo con el resto de familiares y que podáis entrar juntos en la sala desde un navegador <em>Chrome</em> o móvil <em>Android.</em>",
+	"portadaBotonAnterior":"Anterior",
+	"portadaBotonEntrar":"Entrar",
+	"portadaEntrarModoExperto":"Entrar en modo experto (con todos los botones)",
+	"portadaCopiadoConExito":"Se ha copiado con éxito la dirección al portapapeles:",
+	"portadaSalasVisitadas":"Has visitado anteriormente las siguientes salas desde este dispositivo:",
+	"portadaNoEsNumeroValido":"No es un número válido. Prueba con un número de 9 cifras",
+	"pieIntro":"Servicio de <a href='https://www.techpeople.care/' target='_blank'>TechPeopleCare</a> diseñado por <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href='https://jitsi.org/' target='_blank'>jitsi</a>.",
+	"pieEnlaces":"<a href='/ayuda/'>ayuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacidad</a>",
+	"ayudaTitulo":"¿Cómo preparar un móvil o tablet para una persona que no maneja tecnología?",
+	"ayudaSubtitulo":"El objetivo es que la persona mayor sea capaz de conectarse por videollamada simplemente pulsando 4 botones:",
+	"ayudaBotonCorazon":"El icono del corazón para acceder a la aplicación",
+	"ayudaBotonVerde":"El botón verde para iniciar la llamada",
+	"ayudaBotonRojo":"El botón rojo para colgar la llamada",
+	"ayudaBotonCirculo":"El 'círculo' de la barra de estado para volver a empezar",
+	"ayudaMinimo":"Lo mínimo",
+	"ayudaMinimo1":"1º Crear un icono en la pantalla de inicio, dejarlo centrado y ocultar o eliminar el resto de iconos",
+	"ayudaMinimo2":"2º Abrir la aplicación por primera vez para permitir el uso de la cámara y el micrófono",
+	"ayudaComoLoHago":"¿Cómo lo hago?",
+	"ayudaRecomendaciones":"Otras sugerencias",
+	"ayudaRecomendacion1":"Subir el volumen al máximo",
+	"ayudaRecomendacion2":"Aumentar el tamaño de la fuente (la letra)",
+	"ayudaRecomendacion3":"Eliminar todas aplicaciones posibles",
+	"ayudaRecomendacion4":"Ocultar de la pantalla de inicio las aplicaciones que no se puedan desinstalar",
+	"ayudaRecomendacion5":"Desactivar las notificaciones de todas las aplicaciones",
+	"ayudaRecomendacion6":"Desactivar el bloqueo de pantalla",
+	"ayudaRecomendacion7":"Desactivar el PIN en opciones de seguridad",
+	"ayudaRecomendacion8":"Establecer el ahorro de energía a 10 minutos o más",
+	"ayudaRecomendacion9":"Desactivar las actualizaciones automáticas",
+	"ayudaRecomendacion10":"Dejar solo en la pantalla de inicio el icono a videollama.me",
+	"llamadaAyudaTitulo":"Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor",
+	"llamadaBotonContinuar":"Continuar",
+	"llamadaNombreFamiliar":"Familiar",
+	"legalPrivacidadTitulo":"Política de privacidad",
+	"legalPrivacidadSubtitulo1":"1. ¿Quién es el responsable de tratamiento de tus datos?",
+	"legalPrivacidadSubtitulo2":"2. ¿Qué datos recogemos?",
+	"legalPrivacidadDato1":"Marca de tiempo del acceso a la página o recurso",
+	"legalPrivacidadDato2":"IP de origen y página desde la que accedes (Referer)",
+	"legalPrivacidadDato3":"Identificación del navegador que realiza la petición (User Agent)",
+	"legalPrivacidadDato4":"Identificador de la sala en la que entras y si entras en modo experto",
+	"legalPrivacidadSubtitulo3":"3. ¿Con qué finalidad tratamos tus datos?",
+	"legalPrivacidadFin1":"Para generar estadísticas del uso del servicio",
+	"legalPrivacidadFin2":"Para cumplir con la normativa de conservación de logs",
+	"legalPrivacidadFin3":"Para resolver incidencias en el servicio",
+	"legalPrivacidadFin4":"Para mejorar la experiencia de usuario",
+	"legalPrivacidadSubtitulo4":"4. Destinatarios de cesiones o transferencia de datos",
+	"legalPrivacidad4p1":"Dada la naturaleza del servicio utilizamos la infraestructura de <em>meet.jit.si</em>, a través de su API, con la opción de configuración <em>disableThirdPartyRequests</em> para que no utilice el seguimiento con Google Analitycs que tienen activado por defecto.",
+	"legalPrivacidad4p2":"Una vez entras en la sala, estás en sus servidores, cuya política de privacidad es <a href='https://jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/</a>",
+	"legalPrivacidad4p3":"El resto de librerías se cargan desde nuestro servidor, sin hacer uso de CDNs ni otros servidores.",
+	"legalPrivacidadSubtitulo5":"5. Cookies",
+	"legalPrivacidad5p1":"Usamos una cookie propia donde almacenamos los identificadores de las salas en las que has entrado desde ese dispositivo, que sirve tanto para poder mostrártelas en la portada, como para no mostrarte las instrucciones para configurar el dispositivo cada vez que entres.",
+	"legalPrivacidad5p2":"Todos los vídeos incrustados se realizan con <em>youtube-nocookie</em>, por lo que tampoco se produce seguimiento por parte de terceros hasta que le das a reproducir el vídeo.",
+	"legalPrivacidad5p3":"No usamos más cookies, ni propias ni de terceros.",
+	"legalLicenciasTitulo":"Derechos de autor y licencias",
+	"legalLicenciasP1":"Toda la web y sus contenidos están liberados en el repositorio bajo la licencia <em>GNU AFFERO GENERAL PUBLIC LICENSE</em>, cuyo texto completo puedes encontrarlo en:",
+	"legalLicenciasP2":"<a href='https://github.com/TEDECO/videollama.me/blob/master/LICENSE'>LICENSE (github)</a>"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	

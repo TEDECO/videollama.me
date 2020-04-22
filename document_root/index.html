@@ -182,7 +182,7 @@
   
 <footer class="footer">
   <p class="subtitle">
-    Servicio de <a href='https://www.techpeople.care/tpc5/' target='_blank'>TechPeopleCare</a> diseñado por <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href='https://jitsi.org/' target='_blank'>jitsi</a>.
+    Servicio de <a href='https://www.techpeople.care/' target='_blank'>TechPeopleCare</a> diseñado por <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizando como base la plataforma libre y segura <a href='https://jitsi.org/' target='_blank'>jitsi</a>.
   </p>
   <div class="content has-text-centered is-medium">
     <div><strong><a href='/ayuda/'>ayuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacidad</a></strong></div>
@@ -216,7 +216,7 @@
         if (salas != "") {
           salas = '<a class="sala">'+salas.split(',').join('</a>, <a class="sala">')+'</a>';
           salas += '<script>$("a.sala").on("click", function(e){ e.preventDefault; $("#tf").val($(this).text()); });';
-          html = "Has visitado anteriormente las siguientes salas desde este dispositivo: "+salas;
+          html = "Has visitado anteriormente las siguientes salas desde este dispositivo:"+salas;
         }
         return html;
       }
@@ -227,7 +227,7 @@
       var portapapeles = new ClipboardJS('#copiar');
 
       portapapeles.on('success', function(e) {
-        alert ('Se ha copiado con éxito la dirección al portapapeles: '+e.text);
+        alert ('Se ha copiado con éxito la dirección al portapapeles:'+e.text);
         e.clearSelection();
       });
 
