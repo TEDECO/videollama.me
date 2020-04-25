@@ -11,7 +11,7 @@
 	"tituloRRSS":"Videocall your relatives in an easy, free and secure way",
 	"descripcionRRSS":"Video conference system based on a simplification of the Jitsi free software, for people with difficulties to handle new technologies ",
 	"urlRRSS":"https://easyvideocall.me",
-	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share-en.jpg",
 	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
 	"portadaIntro":"On this website, you can create a virtual room where you can meet your relatives by videoconference. <strong>The icon on the home screen gives direct access to the room.</strong> Therefore, a person with technical difficulties do not have to type any number. <a href='/en/help'> How to prepare a mobile or tablet? </a>",
 	"portadaPaso1":"Write a <b>9-digit number</b> to identify your family room (we recommend using a phone number that you easily remember):",
@@ -67,11 +67,11 @@
 	"legalPrivacidad4p2":"Once you enter the room, you are on its servers, whose privacy policy is <a href='https://jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/</a>",
 	"legalPrivacidad4p3":"The rest of the libraries are loaded from our server, without using any CDNs or any other third-party servers.",
 	"legalPrivacidadSubtitulo5":"5. Cookies",
-	"legalPrivacidad5p1":"We use our own cookie where we store the ids of the rooms you have entered from that device. Which serves both to quick acces the rooms, and not to show you the instructions every time you access. ",
-	"legalPrivacidad5p2":"All the embedded videos are made with <em>youtube-nocookie</em>, so there is not tracking by third parties until the video is played.",
-	"legalPrivacidad5p3":"We do not use any additional cookies, neither our own nor third parties.",
+	"legalPrivacidad5p1":"We have created a cookie to store each of the room's IDs you have accessed from your device. It has two purposes. It shows you the cookies at the beginning, but it does not show you the instructions every time you enter the same room. ",
+	"legalPrivacidad5p2":"All embedded videos have <em>youtube-nocookie</em>, so there is no tracking by third parties until you play the video.",
+	"legalPrivacidad5p3":"We do not use any additional cookies, neither our nor from third parties.",
 	"legalLicenciasTitulo":"Copyright and licenses",
-	"legalLicenciasP1":"The whole website and its contents are published under the license  <em>GNU AFFERO GENERAL PUBLIC LICENSE</em>, the complete text is included in:",
+	"legalLicenciasP1":"The entire website and its contents are published under the <em>GNU AFFERO GENERAL PUBLIC LICENSE</em> license, the full text of which you can find at:",
 	"legalLicenciasP2":"<a href='https://github.com/TEDECO/videollama.me/blob/master/LICENSE'>LICENSE (github)</a>"
 	
 	
