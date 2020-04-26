@@ -157,7 +157,7 @@
         if (isNaN(tf) || tf<100000000 || tf>999999999) {
           alert ('${{ traduce.portadaNoEsNumeroValido }}$');
         } else {
-          $('#direccion').val("https://videollama.me${{ traduce.raiz }}$${{ traduce.llamadaSlug }}$/?tf=" + tf);
+          $('#direccion').val("https://videollama.me${{ traduce.raiz }}$al/?tf=" + tf);
           $('#paso1').fadeOut(function() { $('#paso2').fadeIn(); });
         }
       });
