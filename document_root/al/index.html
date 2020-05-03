@@ -149,13 +149,20 @@
 
   <section class="section">
     <div class="container">
+      <div class="control" style="margin:20px 20px 20px 20px;">
+        <button class="button is-large is-link is-rounded is-fullwidth continuar">Continuar</button>
+      </div>
       <p class="title">
         <strong>Sigue estos pasos para terminar de facilitar la videollamada a la persona mayor</strong>  
       </p>
+
+<a href=".leermas" class="desplegar">Leer más</a>
+
       <p class="subtitle">
         El objetivo es que la persona mayor sea capaz de conectarse por videollamada simplemente pulsando 4 botones:
       </p>
-<div id="iconos" class="columns">
+
+<div id="iconos" class="columns leermas">
 <div class="column">
 <div class="columns is-mobile" style="text-align:center;font-weight:bold;">
   <div class="column"><img src="/img/corazon.png" width="100%"><br>El icono del corazón para acceder a la aplicación</div>
@@ -172,7 +179,7 @@
     </div>
   </section>
 
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-medium is-primary is-bold leermas">
   <div class="hero-body">
     <div id="texto-ayuda" class="container">
 
@@ -220,7 +227,7 @@
 
 
     <div class="control" style="margin-top:50px;">
-      <button class="button is-large is-link is-rounded is-fullwidth" id="continuar">Continuar</button>
+      <button class="button is-large is-link is-rounded is-fullwidth continuar">Continuar</button>
     </div>
   </div>
 </section>
@@ -369,7 +376,7 @@ $(function() {
       $(objetivo).slideDown();
     }
   });
-  $('#continuar').on('click', function(e) {
+  $('.continuar').on('click', function(e) {
     $('#ayuda').fadeOut();
   });
   $('#inicio img').on('click', function(e) {
