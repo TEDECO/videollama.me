@@ -93,7 +93,7 @@
     cursor: pointer;
   }
 
-  #video, #fin, #ayuda {
+  #video, #fin, #ayuda, .leermas {
     display: none;
   }
 
@@ -129,7 +129,7 @@
     color: #333 !important;
     text-align: center;
   }
-  #paso1, #paso2, #paso3 {
+  #paso1, #paso2, #paso3, #iconos {
     display: none;
   }
   #iconos img {
@@ -149,13 +149,21 @@
 
   <section class="section">
     <div class="container">
+      <div class="control" style="margin:20px 20px 20px 20px;">
+        <button class="button is-large is-link is-rounded is-fullwidth continuar">Continue</button>
+      </div>
       <p class="title">
         <strong>Follow these steps to complete videocall set up for not technical savvy people.</strong>  
       </p>
+
       <p class="subtitle">
         The goal is for the person without technical knowledge to connect by video call by simply tapping four buttons.
       </p>
-<div id="iconos" class="columns">
+<div class="container text-center">
+<a href=".leermas" class="desplegar">Read more</a>
+</div>
+
+<div id="iconos" class="columns leermas">
 <div class="column">
 <div class="columns is-mobile" style="text-align:center;font-weight:bold;">
   <div class="column"><img src="/img/corazon.png" width="100%"><br>Heart icon to access the app</div>
@@ -172,7 +180,7 @@
     </div>
   </section>
 
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-medium is-primary is-bold leermas">
   <div class="hero-body">
     <div id="texto-ayuda" class="container">
 
@@ -220,7 +228,7 @@
 
 
     <div class="control" style="margin-top:50px;">
-      <button class="button is-large is-link is-rounded is-fullwidth" id="continuar">Continue</button>
+      <button class="button is-large is-link is-rounded is-fullwidth continuar">Continue</button>
     </div>
   </div>
 </section>
@@ -369,7 +377,7 @@ $(function() {
       $(objetivo).slideDown();
     }
   });
-  $('#continuar').on('click', function(e) {
+  $('.continuar').on('click', function(e) {
     $('#ayuda').fadeOut();
   });
   $('#inicio img').on('click', function(e) {

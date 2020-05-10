@@ -44,7 +44,7 @@
     cursor: pointer;
   }
 
-  #video, #fin, #ayuda {
+  #video, #fin, #ayuda, .leermas {
     display: none;
   }
 
@@ -80,7 +80,7 @@
     color: #333 !important;
     text-align: center;
   }
-  #paso1, #paso2, #paso3 {
+  #paso1, #paso2, #paso3, #iconos {
     display: none;
   }
   #iconos img {
@@ -100,13 +100,21 @@
 
   <section class="section">
     <div class="container">
+      <div class="control" style="margin:20px 20px 20px 20px;">
+        <button class="button is-large is-link is-rounded is-fullwidth continuar">${{ traduce.llamadaBotonContinuar }}$</button>
+      </div>
       <p class="title">
         <strong>${{ traduce.llamadaAyudaTitulo }}$</strong>  
       </p>
+
       <p class="subtitle">
         ${{ traduce.ayudaSubtitulo }}$
       </p>
-<div id="iconos" class="columns">
+<div class="container text-center">
+<a href=".leermas" class="desplegar">${{ traduce.ayudaLeerMas }}$</a>
+</div>
+
+<div id="iconos" class="columns leermas">
 <div class="column">
 <div class="columns is-mobile" style="text-align:center;font-weight:bold;">
   <div class="column"><img src="/img/corazon.png" width="100%"><br>${{ traduce.ayudaBotonCorazon }}$</div>
@@ -123,12 +131,12 @@
     </div>
   </section>
 
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-medium is-primary is-bold leermas">
   <div class="hero-body">
     @@include('ayuda-body.html')
 
     <div class="control" style="margin-top:50px;">
-      <button class="button is-large is-link is-rounded is-fullwidth" id="continuar">${{ traduce.llamadaBotonContinuar }}$</button>
+      <button class="button is-large is-link is-rounded is-fullwidth continuar">${{ traduce.llamadaBotonContinuar }}$</button>
     </div>
   </div>
 </section>
@@ -273,7 +281,7 @@ $(function() {
       $(objetivo).slideDown();
     }
   });
-  $('#continuar').on('click', function(e) {
+  $('.continuar').on('click', function(e) {
     $('#ayuda').fadeOut();
   });
   $('#inicio img').on('click', function(e) {
