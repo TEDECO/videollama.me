@@ -4,7 +4,8 @@
 var gulp = require('gulp')
   , del = require('del')
   , fileInclude = require('gulp-file-include')
-  , i18n = require('gulp-html-i18n');
+  , i18n = require('gulp-html-i18n')
+  , htmlmin = require('gulp-htmlmin');
 
 //
 // Tareas de gulp
@@ -32,6 +33,7 @@ gulp.task("traducir-html", function() {
          createLangDirs: true,
          filenameI18n: true
       }))
+      .pipe(htmlmin({ collapseWhitespace: true, removeComments: true, minifyJS: true, minifyCSS: true }))
       .pipe(gulp.dest('document_root/'));
 });
 

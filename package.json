@@ -23,6 +23,7 @@
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-static-i18n": "git+https://github.com/joker-x/gulp-static-i18n.git"
   }
 }
