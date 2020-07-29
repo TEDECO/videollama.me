@@ -8,20 +8,22 @@
     configOverwrite: {
         defaultLanguage: 'en',
         disableThirdPartyRequests: true,
-        disableDeepLinking: true
+        disableDeepLinking: true,
+        prejoinPageEnabled: false
     },
     interfaceConfigOverwrite: {
         DEFAULT_BACKGROUND: '#612d620',
         TOOLBAR_ALWAYS_VISIBLE: true,
         TOOLBAR_BUTTONS: [],
+        SHOW_BRAND_WATERMARK: false,
         SHOW_JITSI_WATERMARK: false,
         SHOW_WATERMARK_FOR_GUESTS: false,
         SHOW_POWERED_BY: true,
+        SHOW_CHROME_EXTENSION_BANNER: false,
         AUTHENTICATION_ENABLE: false,
         SETTINGS_SECTIONS: [],
         DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
-        DEFAULT_LOCAL_DISPLAY_NAME: '',
-        OPTIMAL_BROWSER: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron' ],
+        DEFAULT_LOCAL_DISPLAY_NAME: ''
     },
     //onload: openFullscreen(),
     parentNode: document.getElementById('video')
