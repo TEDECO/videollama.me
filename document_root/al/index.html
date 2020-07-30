@@ -42,7 +42,7 @@
         TOOLBAR_ALWAYS_VISIBLE: true,
         SHOW_JITSI_WATERMARK: false,
         SHOW_WATERMARK_FOR_GUESTS: false,
-        SHOW_POWERED_BY: true,
+        SHOW_POWERED_BY: false,
         AUTHENTICATION_ENABLE: false,
         DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
         DEFAULT_LOCAL_DISPLAY_NAME: '',
@@ -74,7 +74,7 @@
         if (galleta.indexOf(sala) > -1) {
           return true;
         } else {
-          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; expires=2147483647; path=/";
+          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; Max-Age=2147483647; path=/";
         }
       }
     }
