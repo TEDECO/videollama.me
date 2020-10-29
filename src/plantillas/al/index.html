@@ -226,7 +226,8 @@ $(function() {
     if (localStorageEstaSoportado()) {
       var salas = localStorage.getItem('salas');
       if ((salas !== null) && (salas.indexOf(sala) > -1)) return true;
-      localStorage.setItem('salas', salas+','+sala);
+      (salas === null)? salas = sala: salas+','+sala;
+      localStorage.setItem('salas', salas);
 	    console.log("[localStorage] Has visitado estas salas previamente: "+salas);
     } else {
 	    var galletas = document.cookie.split(';');
