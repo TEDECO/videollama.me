@@ -66,11 +66,7 @@
     var sala = dameSala();
     if (localStorageEstaSoportado()) {
       var salas = localStorage.getItem('salas');
-      if (salas === null) {
-        salas = sala;
-      } else {
-        if (salas.indexOf(sala) > -1) return true;
-      }
+      if ((salas !== null) && (salas.indexOf(sala) > -1)) return true;
       localStorage.setItem('salas', salas+','+sala);
 	    console.log("[localStorage] Has visitado estas salas previamente: "+salas);
     } else {
