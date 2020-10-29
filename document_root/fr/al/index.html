@@ -67,7 +67,7 @@
     if (localStorageEstaSoportado()) {
       var salas = localStorage.getItem('salas');
       if ((salas !== null) && (salas.indexOf(sala) > -1)) return true;
-      (salas === null)? salas = sala: salas+','+sala;
+      (salas === null)? salas = sala: salas = salas+','+sala;
       localStorage.setItem('salas', salas);
 	    console.log("[localStorage] Has visitado estas salas previamente: "+salas);
     } else {
