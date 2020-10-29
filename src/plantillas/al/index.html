@@ -222,20 +222,28 @@ $(function() {
   }
 
   function hasVisitadoSala() {
-    var galletas = document.cookie.split(';');
     var sala = dameSala();
-    if (document.cookie.indexOf('salas=') < 0) document.cookie = "salas="+encodeURIComponent(sala)+"; path=/";
-    for(var i=0;i < galletas.length;i++) {
-      var galleta = galletas[i].split('=');
-      if ((galleta.length == 2) && (galleta[0] == "salas")) {
-        galleta = decodeURIComponent(galleta[1]);
-        console.log("Has visitado estas salas previamente: "+galleta);
-        if (galleta.indexOf(sala) > -1) {
-          return true;
-        } else {
-          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; Max-Age=2147483647; path=/";
-        }
-      }
+    if (localStorageEstaSoportado()) {
+      var salas = localStorage.getItem('salas');
+      if (salas === null) salas = sala;
+      if (salas.indexOf(sala) > -1) return true;
+      localStorage.setItem('salas', salas+','+sala);
+	    console.log("[localStorage] Has visitado estas salas previamente: "+salas);
+    } else {
+	    var galletas = document.cookie.split(';');
+	    if (document.cookie.indexOf('salas=') < 0) document.cookie = "salas="+encodeURIComponent(sala)+"; path=/";
+	    for(var i=0;i < galletas.length;i++) {
+	      var galleta = galletas[i].split('=');
+	      if ((galleta.length == 2) && (galleta[0] == "salas")) {
+	        galleta = decodeURIComponent(galleta[1]);
+	        console.log("[cookie] Has visitado estas salas previamente: "+galleta);
+	        if (galleta.indexOf(sala) > -1) {
+	          return true;
+	        } else {
+	          document.cookie = "salas="+encodeURIComponent(galleta + "," + sala)+"; Max-Age=2147483647; path=/";
+	        }
+	      }
+	    }
     }
     return false;
   }

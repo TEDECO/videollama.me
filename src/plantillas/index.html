@@ -121,12 +121,18 @@
     $(function () {
 
       function leerSalasAnteriores() {
-        var galletas = document.cookie.split(';');
-        for(var i=0;i < galletas.length;i++) {
-          var galleta = galletas[i].split('=');
-          if ((galleta.length == 2) && (galleta[0] == "salas")) {
-            return decodeURIComponent(galleta[1]);
-          }
+        if (localStorageEstaSoportado()) {
+          var salas = localStorage.getItem('salas');
+          if (salas === null) return "";
+          return salas;
+        } else {
+		    var galletas = document.cookie.split(';');
+		    for(var i=0;i < galletas.length;i++) {
+		      var galleta = galletas[i].split('=');
+		      if ((galleta.length == 2) && (galleta[0] == "salas")) {
+		        return decodeURIComponent(galleta[1]);
+		      }
+		    }
         }
         return "";
       }
