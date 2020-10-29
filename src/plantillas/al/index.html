@@ -6,6 +6,8 @@
     <title>${{ traduce.titulo }}$</title>
     <meta name="description" content="${{ traduce.descripcion }}$">
 
+    <link rel="manifest" id="mimanifest">
+
     @@include('metas-compartir.html')
 
     @@include('estilos-header.html')
@@ -282,7 +284,28 @@ $(function() {
     api.on('readyToClose', function(){ location.reload() });
   }
 
+
+  function generarManifest() {
+    var manifest = {
+      "short_name": "videollama.me",
+      "name": "videollama.me",
+      "icons": [
+        {
+          "src": "/img/corazon.png",
+          "type": "image/png",
+          "sizes": "300x300"
+        }
+      ],
+      "start_url": window.location.href,
+      "display": "fullscreen",
+      "theme_color": "#000000"
+    };
+    var blob = new Blob([JSON.stringify(manifest)], {type: 'application/json'});
+    $('#mimanifest').attr('href', URL.createObjectURL(blob));
+  }
+
   // MAIN
+  generarManifest();
   if (!hasVisitadoSala() && !esModoExperto()) $('#ayuda').fadeIn();
   $('.desplegar').on('click', function(e) {
     e.preventDefault();
