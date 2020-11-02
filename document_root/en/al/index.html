@@ -9,7 +9,9 @@
         defaultLanguage: 'en',
         disableThirdPartyRequests: true,
         disableDeepLinking: true,
-        prejoinPageEnabled: false
+        prejoinPageEnabled: false,
+        enableNoisyMicDetection: false,
+        enableInsecureRoomNameWarning: false
     },
     interfaceConfigOverwrite: {
         DEFAULT_BACKGROUND: '#612d620',
@@ -114,6 +116,8 @@
       $('#fin img').on('click', function(e) {
         e.preventDefault();
         api.executeCommand('hangup');
+        api.dispose();
+        setTimeout(function(){ location.reload(); }, 2000);
       });
     }
     //api.executeCommand('toggleTileView');
@@ -135,7 +139,7 @@
           "sizes": "300x300"
         }
       ],
-      "start_url": window.location.href,
+      "start_url": window.location.pathname + window.location.search,
       "display": "fullscreen",
       "theme_color": "#000000"
     };
