@@ -1,0 +1,102 @@
+{	
+	"langCode":"gl",
+	"raiz":"/gl/",
+	"nativeName":"Galego",
+	"ayudaSlug":"axuda",
+	"legalSlug":"legal",
+	"llamadaSlug":"a",
+	"dominio":"videollama.me",
+	"titulo":"Videochama aos teus de forma fácil, libre e segura |  videollama.me",
+	"descripcion":"Sistema de videoconferencia baseado no software libre  Jitsi simplificado para persoas con dificultades no manexo de novas tecnoloxías.",
+	"tituloRRSS":"Videochama aos teus de forma fácil, libre e segura",
+	"descripcionRRSS":"Sistema de videoconferencia baseado no software libre  Jitsi simplificado para persoas con dificultades no manexo de novas tecnoloxías.",
+	"urlRRSS":"https://videollama.me",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"Nesta web poderás crear unha sala virtual onde reunirte cos teus por videoconferencia. <strong>A persoa con dificultades tecnolóxicas debe acceder a través dunha icona na pantalla de inicio </strong> directamente á sala para evitar que teña que escribir ningún número. <a href='/ayuda'> Como preparar un móbil ou  tablet?</a>",
+	"portadaPaso1":"Escribe un <b>número de 9 cifras </b> que identificará a vosa sala familiar (recomendamos usar un número de teléfono que lembredes facilmente):",
+	"portadaBotonSiguiente":"Seguinte",
+	"portadaPaso2":"A ligazón para entrar na vosa sala é:",
+	"portadaPaso2Copiar":"Copia a ligazón para compartilo co resto de familiares e que poidades entrar xuntos na sala desde un navegador <em>Chrome</em> ou móbil <em>Android.</em>",
+	"portadaBotonAnterior":"Anterior",
+	"portadaBotonEntrar":"Entrar",
+	"portadaEntrarModoExperto":"Entrar en modo experto (con todos os botóns)",
+	"portadaCopiadoConExito":"Copiouse con éxito a dirección ao  portapapeis:",
+	"portadaSalasVisitadas":"Visitaches anteriormente as seguintes salas desde este dispositivo:",
+	"portadaNoEsNumeroValido":"Non é un número válido. Proba cun número de 9 cifras",
+	"pieIntro":"Servizo de <a href='https://www.techpeople.care/'target='_ blank'> TechPeopleCare deseñado por <a href='http://tedeco.fi.upm.es/' target='_ blank'> TEDECO ( UPM)</a> utilizando como base a plataforma libre e segura <a href='https://jitsi. org/'target='_ blank'> jitsi.",
+	"pieEnlaces":"<a href='/axuda/'>axuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacidad</a>",
+	"ayudaTitulo":"Como preparar un móbil ou  tablet para unha persoa que non manexa tecnoloxía?",
+	"ayudaSubtitulo":"O obxectivo é que a persoa maior sexa capaz de conectarse por  videochamada simplemente pulsando 4 botóns:",
+	"ayudaBotonCorazon":"A icona do corazón para acceder á aplicación",
+	"ayudaBotonVerde":"O botón verde para iniciar a chamada",
+	"ayudaBotonRojo":"O botón vermello para colgar a chamada",
+	"ayudaBotonCirculo":"O 'círculo' da barra de estado para empezar de novo",
+	"ayudaMinimo":"O mínimo",
+	"ayudaMinimo1":"1º Crear unha icona na pantalla de inicio, deixala centrada e ocultar ou eliminar o resto de iconas",
+	"ayudaMinimo2":"2º Abrir a aplicación por primeira vez para permitir o uso da cámara e o micrófono",
+	"ayudaComoLoHago":"Como o fago?",
+	"ayudaRecomendaciones":"Outras suxerencias",
+	"ayudaRecomendacion1":"Subir o volume ao máximo",
+	"ayudaRecomendacion2":"Aumentar o tamaño da fonte (a letra)",
+	"ayudaRecomendacion3":"Eliminar todas as aplicacións posibles",
+	"ayudaRecomendacion4":"Ocultar da pantalla de inicio as aplicacións que non se poidan  desinstalar",
+	"ayudaRecomendacion5":"Desactivar as notificacións de todas as aplicacións",
+	"ayudaRecomendacion6":"Desactivar o bloqueo de pantalla",
+	"ayudaRecomendacion7":"Desactivar o PIN en opcións de seguridade",
+	"ayudaRecomendacion8":"Establecer o aforro de enerxía a 10 minutos ou máis",
+	"ayudaRecomendacion9":"Desactivar as actualizacións automáticas",
+	"ayudaRecomendacion10":"Deixar só na pantalla de inicio a icona a  videollama.me",
+	"llamadaAyudaTitulo":"Segue estes pasos para terminar de facilitar a  videochamada á persoa maior",
+	"llamadaBotonContinuar":"Continuar",
+	"llamadaNombreFamiliar":"Familiar",
+	"legalPrivacidadTitulo":"Política de privacidade",
+	"legalPrivacidadSubtitulo1":"1. Quen é o responsable de tratamento dos teus datos?",
+	"legalPrivacidadSubtitulo2":"2. Que datos recollemos?",
+	"legalPrivacidadDato1":"Marca de tempo do acceso á páxina ou recurso",
+	"legalPrivacidadDato2":"IP de orixe e páxina desde a que accedes (Referer)",
+	"legalPrivacidadDato3":"Identificación do navegador que realiza a petición (User  Agent)",
+	"legalPrivacidadDato4":"Identificador da sala na que entras e se entras en modo experto",
+	"legalPrivacidadSubtitulo3":"3. Con que finalidade tratamos os teus datos?",
+	"legalPrivacidadFin1":"Para xerar estatísticas do uso do servizo",
+	"legalPrivacidadFin2":"Para cumprir coa normativa de conservación de logs",
+	"legalPrivacidadFin3":"Para resolver incidencias no servizo",
+	"legalPrivacidadFin4":"Para mellorar a experiencia de usuario",
+	"legalPrivacidadSubtitulo4":"4. Destinatarios de cesións ou transferencia de datos",
+	"legalPrivacidad4p1":"Dada a natureza do servizo utilizamos a infraestrutura de <em>meet. jit.si</em>, a través do seu API, coa opción de configuración <em>disableThirdPartyRequests</em> para que non utilice o seguimento con Google  Analitycs que teñen activado por defecto.",
+	"legalPrivacidad4p2":"Unha vez entras na sala, estás nos seus servidores, cuxa política de privacidade é <a href='https://jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/</a>",
+	"legalPrivacidad4p3":"O resto de librerías cárganse desde o noso servidor, sen facer uso de  CDNs nin outros servidores.",
+	"legalPrivacidadSubtitulo5":"5.Cookies",
+	"legalPrivacidad5p1":"Usamos unha  cookie propia onde almacenamos os identificadores das salas nas que entraches desde ese dispositivo, que serve tanto para poder mostrarchas na portada, como para non mostrarche as instrucións para configurar o dispositivo cada vez que entres.",
+	"legalPrivacidad5p2":"Todos os vídeos incrustados realízanse con <em>youtube-nocookie</em>, polo que tampouco se produce seguimento por parte de terceiros ata que lle dás a reproducir o vídeo.",
+	"legalPrivacidad5p3":"Non usamos máis  cookies, nin propias nin de terceiros.",
+	"legalLicenciasTitulo":"Dereitos de autor e licenzas",
+	"legalLicenciasP1":"Toda a web e os seus contidos están liberados no repositorio baixo a licenza <em>GNU  AFFERO GENERAL  PUBLIC  LICENSE</em>, cuxo texto completo podes atopalo en:",
+	"ayudaLeerMas":"Ler máis"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	
