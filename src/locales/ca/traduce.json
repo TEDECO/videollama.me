@@ -1,0 +1,102 @@
+{	
+	"langCode":"ca",
+	"raiz":"/ca/",
+	"nativeName":"Català",
+	"ayudaSlug":"ajuda",
+	"legalSlug":"legal",
+	"llamadaSlug":"al",
+	"dominio":"videollama.me",
+	"titulo":"Videotruca als teus de forma fàcil, lliure i segura | videollama.me",
+	"descripcion":"Sistema de videoconferència basat en programari lliure Jitsi simplificat per a persones amb dificultats amb l'utilització de noves tecnologíes.",
+	"tituloRRSS":"Videotruca als teus de forma fàcil, lliure i segura",
+	"descripcionRRSS":"Sistema de videoconferència basat en programari lliure Jitsi simplificat per a persones amb dificultats amb l'utilització de noves tecnologíes.",
+	"urlRRSS":"https://videollama.me",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"A aquest lloc web, podràs crear una sala virtual on reunir-te amb els teus per videoconferència. <strong>La persona amb dificultats tecnològiques ha d'accedir mitjançant una icona a la pàgina d'inici</strong> directament a la sala per tal d'evitar que tingui que escriure cap nombre.<a href='/ayuda'> Com preparar un mòbil o tablet?</a>",
+	"portadaPaso1":"Escriu un <b>nombre de 9 xifres</b> que identificarà la vostra sala familiar (recomanem utilitzar un número de telèfon que recordeu fàcilment):",
+	"portadaBotonSiguiente":"Següent ",
+	"portadaPaso2":"L'enllaç per entrar a la vostra sala és:",
+	"portadaPaso2Copiar":"Copia l'enllaç per compartir-lo amb la resta de familiars i que pugueu entrar junts a la sala des d'un navegador <em> Chrome </em> o mòbil <em> Android. </em>",
+	"portadaBotonAnterior":"Anterior",
+	"portadaBotonEntrar":"Entrar",
+	"portadaEntrarModoExperto":" Entrar a mode expert (amb tots els botons)",
+	"portadaCopiadoConExito":"S'ha copiat amb èxit la direcció a al porta-retalls:",
+	"portadaSalasVisitadas":"Has visitat anteriorment les següents sales des d'aquest dispositiu:",
+	"portadaNoEsNumeroValido":"No és un nombre vàlid. Prova amb un nombre de 9 xifres",
+	"pieIntro":"Servei de <a href='https://www.techpeople.care/' target='_blank'> TechPeopleCare </a> dissenyat per <a href = 'http: //tedeco.fi.upm.es/' target = '_ blank'> TEDECO (UPM) </a> utilitzant com a base la plataforma lliure i segura <a href='https://jitsi.org/' target='_blank'> jitsi </a>. ",
+	"pieEnlaces":"<a href='/ayuda/'>ajuda</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>privacitat</a>",
+	"ayudaTitulo":"Com preparar un mòbil o tablet per a una persona que no fa servir tecnologia?",
+	"ayudaSubtitulo":"L'objectiu és que la persona gran sigui capaç de connectar-se per videotrucada simplement prement 4 botons:",
+	"ayudaBotonCorazon":" La icona de cor per accedir a l'aplicació",
+	"ayudaBotonVerde":" El botó verd per iniciar l'aplicació",
+	"ayudaBotonRojo":"El botó vermell per penjar la trucada",
+	"ayudaBotonCirculo":"El 'cercle' de la barra d'estat per tornar a començar",
+	"ayudaMinimo":"El mínim",
+	"ayudaMinimo1":"1er Crear una icona a la pantalla d'inici, deixar-ho centrat i amagar o eliminar la resta d'icones",
+	"ayudaMinimo2":"2n Obrir l'aplicació per primera vegada per permetre l'ús de la càmera i el micròfon",
+	"ayudaComoLoHago":"Com ho faig?",
+	"ayudaRecomendaciones":"Altres suggeriments",
+	"ayudaRecomendacion1":"Pujar el volum al màxim",
+	"ayudaRecomendacion2":"Augmentar la mida de la font (la lletra)",
+	"ayudaRecomendacion3":"Eliminar totes les aplicacions possibles",
+	"ayudaRecomendacion4":"Amaga de la pantalla d'inici les aplicacions que no es puguin desinstal·lar",
+	"ayudaRecomendacion5":"Desactivar les notificacions de totes les aplicacions",
+	"ayudaRecomendacion6":"Desactivar el bloqueig de pantalla",
+	"ayudaRecomendacion7":"Desactivar el PIN en opcions de seguretat",
+	"ayudaRecomendacion8":"Establir l'estalvi d'energia a 10 minuts o més",
+	"ayudaRecomendacion9":"Desactivar les actualitzacions automàtiques",
+	"ayudaRecomendacion10":"Deixar només a la pantalla d'inici la icona a videollama.me",
+	"llamadaAyudaTitulo":"Segueix aquests passos per acabar de facilitar la videotrucada a la persona gran",
+	"llamadaBotonContinuar":"Continuar",
+	"llamadaNombreFamiliar":"Familiar",
+	"legalPrivacidadTitulo":"Política de privacitat",
+	"legalPrivacidadSubtitulo1":"1. Qui és el responsable de tractament de les teves dades?",
+	"legalPrivacidadSubtitulo2":"2. Quines dades recollim?",
+	"legalPrivacidadDato1":"Marca de temps de l'accés a la pàgina o recurs",
+	"legalPrivacidadDato2":"IP d'origen i pàgina des de la qual accedeixes (Referer)",
+	"legalPrivacidadDato3":"Identificació de el navegador que realitza la petició (User Agent)",
+	"legalPrivacidadDato4":"Identificador de la sala en què entres i si entres en mode expert",
+	"legalPrivacidadSubtitulo3":"3. Amb quina finalitat tractem les teves dades?",
+	"legalPrivacidadFin1":"Per generar estadístiques de l'ús de l'servei",
+	"legalPrivacidadFin2":"Per complir amb la normativa de conservació de logs",
+	"legalPrivacidadFin3":"Per resoldre incidències en el servei",
+	"legalPrivacidadFin4":"Per millorar l'experiència d'usuari",
+	"legalPrivacidadSubtitulo4":"4. Destinataris de cessions o transferència de dades",
+	"legalPrivacidad4p1":"Donada la naturalesa de l'servei utilitzem la infraestructura de <em> meet.jit.si </em>, a través del seu API, amb l'opció de configuració <em> disableThirdPartyRequests </em> perquè no utilitzi el seguiment amb Google Analitycs que tenen activat per defecte.",
+	"legalPrivacidad4p2":"Un cop entres a la sala, estàs en els seus servidors, la política de privacitat és <a href='https://jitsi.org/meet-jit-si-privacy/'> https://jitsi.org/meet- JIT-si-privacy / </a>",
+	"legalPrivacidad4p3":"La resta de llibreries es carreguen des del nostre servidor, sense fer ús de CDNs ni altres servidors.",
+	"legalPrivacidadSubtitulo5":"5. Cookies",
+	"legalPrivacidad5p1":"Fem servir una cookie pròpia on emmagatzemem els identificadors de les sales en què has entrat des d'aquest dispositiu, que serveix tant per a poder mostrártelas a la portada, com per no mostrar-te les instruccions per configurar el dispositiu cada vegada que entris.",
+	"legalPrivacidad5p2":"Tots els vídeos incrustats es realitzen amb <em> youtube-nocookie </em>, de manera que tampoc es produeix seguiment per part de tercers fins que li dónes a reproduir el vídeo.",
+	"legalPrivacidad5p3":"No fem servir més cookies, ni pròpies ni de tercers.",
+	"legalLicenciasTitulo":"Drets d'autor i llicències",
+	"legalLicenciasP1":"Tota la web i els seus continguts estan alliberats al repositori sota la llicència <em> GNU Affero General Public License </em>, el text complet pots trobar a:",
+	"ayudaLeerMas":"Llegir més"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	
