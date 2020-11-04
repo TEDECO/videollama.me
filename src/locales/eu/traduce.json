@@ -1,0 +1,102 @@
+{	
+	"langCode":"eu",
+	"raiz":"/eu/",
+	"nativeName":"Euskara",
+	"ayudaSlug":"laguntza",
+	"legalSlug":"legala",
+	"llamadaSlug":"al",
+	"dominio":"videollama.me",
+	"titulo":"Deitu zure ahaidei erraz, libre eta seguru bidez | videollama.me",
+	"descripcion":"Teknologia berriak erabiltzeko zailtasunak dituzten pertsonentzat Jitsi software librean oinarrituta bideokonferentzia sistema.",
+	"tituloRRSS":"Deitu zure ahaidei erraz, libre eta seguru bidez",
+	"descripcionRRSS":"Teknologia berriak erabiltzeko zailtasunak dituzten pertsonentzat Jitsi software librean oinarrituta bideokonferentzia sistema.",
+	"urlRRSS":"https://videollama.me",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"Webgune honetan zure ahaidekin bideo-konferentziaren bidez topatzeko gela birtuala sor dezakezu. <strong>Zailtasun teknologikoak dituen pertsonak hasierako pantailan ikono baten bidez zuzenean sartu beharko da</strong> gelara zenbakirik sartu behar ez izateko. <a href='/ayuda'>Nola prestatu mugikorra edo tableta?</a>",
+	"portadaPaso1":"Idatzi zure familiaren gela identifikatuko duen <b>9 digituko zenbakia</b> (erraz gogoratzen duzun telefono zenbakia erabiltzea gomendatzen dugu):",
+	"portadaBotonSiguiente":"Hurrengoa",
+	"portadaPaso2":"Zure gelan sartzeko esteka:",
+	"portadaPaso2Copiar":"Kopiatu esteka hau gainerako senideekin partekatzeko eta batera gelan sar zaitezkeela <em>Chrome</em> arakatzailetik edo <em>Android</em> mugikorretik.",
+	"portadaBotonAnterior":"Aurrekoa",
+	"portadaBotonEntrar":"Sartu",
+	"portadaEntrarModoExperto":"Sartu aditu moduan (botoi guztiekin)",
+	"portadaCopiadoConExito":"Helbidea arbelean kopiatu da:",
+	"portadaSalasVisitadas":"Aurretik honako gelak bisitatu dituzu gailu honetatik:",
+	"portadaNoEsNumeroValido":"Ez da baliozko zenbakia. Saiatu 9 digituko zenbaki batekin",
+	"pieIntro":"TEDECO-k (UPM) diseinatutako <a href='https://www.techpeople.care/' target='_blank'>TechPeopleCare</a> zerbitzua, <a href='https://jitsi.org/' target='_blank'>jitsi</a> plataforma libre eta segurua oinarri gisa erabiliz.",
+	"pieEnlaces":"<a href='/ayuda/'>laguntza</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/legal/'>pribatutasuna</a>",
+	"ayudaTitulo":"Nola prestatu telefono mugikorra edo tableta teknologiarekin kudeatzen ez duen pertsona batentzat?",
+	"ayudaSubtitulo":"Helburua da adineko pertsonek 4 botoiak sakatuz bideo-deien bidez konektatzeko gai izatea:",
+	"ayudaBotonCorazon":"Aplikaziora sartzeko bihotzaren ikonoa",
+	"ayudaBotonVerde":"Botoi berdea deia hasteko",
+	"ayudaBotonRojo":"Botoi gorria deia mozteko.",
+	"ayudaBotonCirculo":"Berriro hasteko egoera-barraren 'zirkulua'",
+	"ayudaMinimo":"Gutxienekoa",
+	"ayudaMinimo1":"1. Sortu ikono bat hasierako pantailan, utzi zentratuta eta ezkutatu edo ezabatu gainerako ikonoak",
+	"ayudaMinimo2":"2. Ireki aplikazioa lehenengo aldiz kamera eta mikrofonoaren erabilerako baimena emateko",
+	"ayudaComoLoHago":"Nola egiten dut?",
+	"ayudaRecomendaciones":"Beste iradokizunak",
+	"ayudaRecomendacion1":"Bolumena maximora igotzea",
+	"ayudaRecomendacion2":"Letra tamaina handitu",
+	"ayudaRecomendacion3":"Kendu beharrezkoak ez diren aplikazio guztiak",
+	"ayudaRecomendacion4":"Ezin diren kendu aplikazioak hasierako pantailatik ezkutatu",
+	"ayudaRecomendacion5":"Aplikazio guztien jakinarazpenak desaktibatu",
+	"ayudaRecomendacion6":"Pantailaren blokeoa desaktibatu",
+	"ayudaRecomendacion7":"Segurtasun aukeretan PINa desaktibatu",
+	"ayudaRecomendacion8":"Ezarri energia aurrezpena 10 minututan edo gehiago",
+	"ayudaRecomendacion9":"Eguneratze automatikoak desaktibatu",
+	"ayudaRecomendacion10":"Utzi bakarrik videollama.me ikonoa hasierako pantailan.",
+	"llamadaAyudaTitulo":"Jarraitu urrats hauek adineko pertsonari bideo deia errazten amaitzeko",
+	"llamadaBotonContinuar":"Jarraitu",
+	"llamadaNombreFamiliar":"Familiarra",
+	"legalPrivacidadTitulo":"Pribatutasun politika",
+	"legalPrivacidadSubtitulo1":"1. Nor da zure datuen tratamenduko arduraduna?",
+	"legalPrivacidadSubtitulo2":"2. Zer datu biltzen ditugu?",
+	"legalPrivacidadDato1":"Orrira edo baliabidera sarbidearen denbora-marka",
+	"legalPrivacidadDato2":"Jatorriko IPa eta atzitzen ari zaren orrialdetik (Referer)",
+	"legalPrivacidadDato3":"Eskaera egiten duen arakatzailearen identifikazioa (User Agent)",
+	"legalPrivacidadDato4":"Sartzen zaren gelaren identifikatzailea eta aditu moduan sartzen bazara",
+	"legalPrivacidadSubtitulo3":"3. Zein helbururekin tratatzen ditugu zure datuak?",
+	"legalPrivacidadFin1":"Zerbitzuaren erabilerari buruzko estatistikak sortu.",
+	"legalPrivacidadFin2":"Logak gordetzeko araudia betetzeko.",
+	"legalPrivacidadFin3":"Zerbitzuko gorabeherak konpontzeko",
+	"legalPrivacidadFin4":"Erabiltzaileen esperientzia hobetzeko",
+	"legalPrivacidadSubtitulo4":"4. Lagapen-hartzaileak edo datuen transferentziak",
+	"legalPrivacidad4p1":"Zerbitzuaren izaera kontuan hartuta, <em>meet.jit.si</em>-ren azpiegitura erabiltzen dugu, bere APIaren bidez, <em>disableThirdPartyRequests</em> konfigurazio aukerarekin, modu lehenetsian aktibatu duten Google Analytics-ekin jarraipena egin ez dezan.",
+	"legalPrivacidad4p2":"Gelara sartu ondoren, haien zerbitzarietan zaude, zeinen pribatutasun politika <a href='https://jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/</a> baita.",
+	"legalPrivacidad4p3":"Gainerako liburutegiak gure zerbitzaritik kargatzen dira, CDNak edo beste zerbitzaririk erabili gabe.",
+	"legalPrivacidadSubtitulo5":"5. Cookieak",
+	"legalPrivacidad5p1":"Gure cookie propioa erabiltzen dugu gailu horretatik sartu zinen gelen identifikatzaileak gordetzeko, lehen orrialdean erakutsi ahal izateko balio duela eta sartzen zaren bakoitzean gailua konfiguratzeko argibideak ez erakusteko.",
+	"legalPrivacidad5p2":"Bideo guztiak <em>youtube-nocookie</em>-rekin txertatutak daude, beraz, hirugarrenen jarraipenik ez da egiten bideoa erreproduzitzeko eman arte.",
+	"legalPrivacidad5p3":"Ez dugu cookie gehiago erabiltzen, ez gureak, ezta hirugarrenenak ere.",
+	"legalLicenciasTitulo":"Egile eskubideak eta lizentziak",
+	"legalLicenciasP1":"Webgune osoa eta bere edukiak <em>GNU AFFERO GENERAL PUBLIC LICENSE</em> lizentziarekin biltegian argitaratzen dira, testu osoa hemen:",
+	"ayudaLeerMas":"Irakurri gehiago"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	
