@@ -280,7 +280,7 @@ $(function() {
         api.dispose();
         //setTimeout(function(){ location.reload(); }, 2000);
         //setTimeout(function(){ window.close(); }, 2000);
-        window.close();
+        setTimeout(function(){ open(location, '_self').close(); }, 1000);
       });
     }
     //api.executeCommand('toggleTileView');
