@@ -279,7 +279,8 @@ $(function() {
         api.executeCommand('hangup');
         api.dispose();
         //setTimeout(function(){ location.reload(); }, 2000);
-        setTimeout(function(){ window.close(); }, 2000);
+        //setTimeout(function(){ window.close(); }, 2000);
+        window.close();
       });
     }
     //api.executeCommand('toggleTileView');
