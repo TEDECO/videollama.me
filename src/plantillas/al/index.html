@@ -278,7 +278,8 @@ $(function() {
         e.preventDefault();
         api.executeCommand('hangup');
         api.dispose();
-        setTimeout(function(){ location.reload(); }, 2000);
+        //setTimeout(function(){ location.reload(); }, 2000);
+        setTimeout(function(){ window.close(); }, 2000);
       });
     }
     //api.executeCommand('toggleTileView');
@@ -302,7 +303,7 @@ $(function() {
       ],
       "start_url": window.location.pathname + window.location.search,
       "display": "fullscreen",
-      "theme_color": "#000000"
+      "theme_color": "#ffffff"
     };
     var blob = new Blob([JSON.stringify(manifest)], {type: 'application/json'});
     $('#mimanifest').attr('href', URL.createObjectURL(blob));
