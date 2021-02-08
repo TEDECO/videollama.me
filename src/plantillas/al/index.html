@@ -278,9 +278,7 @@ $(function() {
         e.preventDefault();
         api.executeCommand('hangup');
         api.dispose();
-        //setTimeout(function(){ location.reload(); }, 2000);
-        //setTimeout(function(){ window.close(); }, 2000);
-        setTimeout(function(){ open(location, '_self').close(); }, 1000);
+        setTimeout(function(){ window.close(); location.reload(); }, 2000);
       });
     }
     //api.executeCommand('toggleTileView');
