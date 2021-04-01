@@ -1,0 +1,102 @@
+{	
+	"langCode":"zh",
+	"raiz":"/zh/",
+	"nativeName":"中文",
+	"ayudaSlug":"帮助",
+	"legalSlug":"legal",
+	"llamadaSlug":"前往",
+	"dominio":"videollama.me",
+	"titulo":"视频致电给您的亲属，轻松，免费，安全！viedollama.me",
+	"descripcion":"基于Jitsi软件简化的视频会议系统，适用于难以使用新技术的人群",
+	"tituloRRSS":"以简单，免费和安全的方式对您的亲戚进行视频通话",
+	"descripcionRRSS":"基于Jitsi软件简化的视频会议系统，适用于难以使用新技术的人们",
+	"urlRRSS":"https://videollama.me",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"在本网站上，您可以创建一个虚拟房间，在这里可以通过视频会议与亲戚见面。 <strong>主屏幕上的图标可直接访问虚拟房间。</strong>直达虚拟房间并且您不必输入任何数字。 <a href='/en/help'>如何准备手机或平板电脑？ </a>",
+	"portadaPaso1":"输入<b> 0-9的数字</b>来标识您的虚拟房间（我们建议使用您容易记住的数字号码）：",
+	"portadaBotonSiguiente":"下一步",
+	"portadaPaso2":"打开您的虚拟房间的链接是：",
+	"portadaPaso2Copiar":"复制此链接以与他人共享该链接，以便他人可以从<em> Chrome </em>浏览器或<em> Android移动版一起进入您的虚拟房间。</em>",
+	"portadaBotonAnterior":"上一步",
+	"portadaBotonEntrar":"进入",
+	"portadaEntrarModoExperto":"以开发者模式访问（所有按钮）",
+	"portadaCopiadoConExito":"此地址已成功复制到剪贴板",
+	"portadaSalasVisitadas":"您曾通过此设备访问过以下虚拟房间：",
+	"portadaNoEsNumeroValido":"无法识别此号码。 请重新尝试输入0-9的数字。",
+	"pieIntro":"由 <a href='https://www.techpeople.care/' target='_blank'>TechPeopleCare</a> 服务 <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> 来自免费且安全的平台 <a href='https://jitsi.org/' target='_blank'>Jitsi</a>.",
+	"pieEnlaces":"<a href='/en/help/'>帮助</a> | <a href='mailto:hi@easyvideocall.me'> hi@easyvideocall.me </a> | <a href='/en/legal/'>隐私</a>",
+	"ayudaTitulo":"如何为没有技术知识的人设置手机或平板电脑？",
+	"ayudaSubtitulo":"目的是使没有技术知识的人，只需轻按四个按钮即可开始视频通话。",
+	"ayudaBotonCorazon":"心形图标以访问应用",
+	"ayudaBotonVerde":"绿色按钮开始通话",
+	"ayudaBotonRojo":"红色按钮结束通话",
+	"ayudaBotonCirculo":"状态栏的“圆圈”回到初始界面",
+	"ayudaMinimo":"最小",
+	"ayudaMinimo1":"1）在主界面上创建一个图标，将其保留在中间，然后隐藏或清除其余图标",
+	"ayudaMinimo2":"2）首次打开次应用程序时点击允许使用相机和麦克风权限",
+	"ayudaComoLoHago":"我要怎么做？",
+	"ayudaRecomendaciones":"其他建议",
+	"ayudaRecomendacion1":"音量调至最大",
+	"ayudaRecomendacion2":"增大字体",
+	"ayudaRecomendacion3":"删除所有不必要的应用程序。",
+	"ayudaRecomendacion4":"隐藏无法卸载的应用",
+	"ayudaRecomendacion5":"关闭所有应用程序的通知",
+	"ayudaRecomendacion6":"关闭锁屏",
+	"ayudaRecomendacion7":"在安全选项中禁用PIN码。",
+	"ayudaRecomendacion8":"将省电模式设定为保证10分钟使用时间以上",
+	"ayudaRecomendacion9":"关闭自动更新",
+	"ayudaRecomendacion10":"主界面仅放置videollama.me的图标",
+	"llamadaAyudaTitulo":"请按照以下步骤完成针对老年用户的视频通话设置",
+	"llamadaBotonContinuar":"继续",
+	"llamadaNombreFamiliar":"家庭",
+	"legalPrivacidadTitulo":"隐私政策",
+	"legalPrivacidadSubtitulo1":"1.谁负责数据处理？",
+	"legalPrivacidadSubtitulo2":"2.我们收集您的什么数据？",
+	"legalPrivacidadDato1":"网站和资源的时间日志",
+	"legalPrivacidadDato2":"您访问的IP和页面（来源）",
+	"legalPrivacidadDato3":"发出请求的浏览器标识（用户代理）",
+	"legalPrivacidadDato4":"您的虚拟房间ID，以及是否以开发者模式访问",
+	"legalPrivacidadSubtitulo3":"3.我们为什么要处理您的数据？",
+	"legalPrivacidadFin1":"为了生成有关本服务使用情况的统计信息",
+	"legalPrivacidadFin2":"为了严格遵守日志保存的规定",
+	"legalPrivacidadFin3":"为了对本服务进行故障排除",
+	"legalPrivacidadFin4":"为了完善用户体验",
+	"legalPrivacidadSubtitulo4":"4.任务或数据传输的收件人",
+	"legalPrivacidad4p1":"考虑到服务的性质，我们通过其API使用<em> meet.jit.si </em>基础结构，并默认启用了<em> disableThirdPartyRequests </em>配置选项。 这将停止使用Google Analytics（分析）进行跟踪。",
+	"legalPrivacidad4p2":"进入虚拟房间，您便默认使用本服务，并同意本服务的隐私策略，其隐私策略为<a href='https://jitsi.org/meet-jit-si-privacy/'> https://jitsi.org/meet-jit -si-privacy / </a>",
+	"legalPrivacidad4p3":"其余的库是从我们的服务器加载的，无需使用任何CDN或任何其他第三方服务器。",
+	"legalPrivacidadSubtitulo5":"5.Cookies",
+	"legalPrivacidad5p1":"我们创建了一个cookie，用于存储您从设备访问的每个虚拟房间的ID。 它有两个目的。 它会在开始时显示cookie，但不会在您每次进入同一个虚拟房间时向您显示说明。",
+	"legalPrivacidad5p2":"本服务的所有嵌入式视频均具有<em> youtube-nocookie </em>，因此在您播放视频之前，第三方不会对此跟踪。",
+	"legalPrivacidad5p3":"我们不会使用任何其他的cookie，无论是我们自己还是第三方的cookie。",
+	"legalLicenciasTitulo":"版权和许可",
+	"legalLicenciasP1":"整个网站及其内容均由<em> GNU AFFERO GENERAL PUBLIC LICENSE </em>许可发布，全文可在以下网站找到：",
+	"ayudaLeerMas":"更多"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	
