@@ -1,0 +1,102 @@
+{	
+	"langCode":"de",
+	"raiz":"/de/",
+	"nativeName":"Deutsch",
+	"ayudaSlug":"hilfe",
+	"legalSlug":"rechtliches",
+	"llamadaSlug":"zu",
+	"dominio":"videollama.me",
+	"titulo":"Videoanrufen Sie Ihre Lieben einfach, frei und sicher | videollama.me",
+	"descripcion":"Videokonfernzsystem basierend auf das Open Source System Jitsi, vereinfacht für Menschen mit Schwierigkeiten beim Umgang mit neuen Technologien.",
+	"tituloRRSS":"Videoanrufen Sie Ihre Lieben einfach, frei und sicher.",
+	"descripcionRRSS":"Videokonfernzsystem basierend auf das Open Source System Jitsi, vereinfacht für Menschen mit Schwierigkeiten beim Umgang mit neuen Technologien.",
+	"urlRRSS":"https://videollama.me/de",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"Auf dieser Website können Sie einen virtuellen Raum erstellen, in dem Sie Ihre Lieben per Videokonferenz treffen können. <strong>Die Person mit Schwierigkeiten mit neuem Technologien muss über ein Symbol auf dem Bildschirm </strong> darauf zugreifen, damit sie keine Nummer schreiben muss. <a href='/de/hilfe'>Wie können wir ein Handy oder Tablet vorbereiten?</a>",
+	"portadaPaso1":"Schreiben Sie eine <b> 9-stellige Nummer </b> die Ihren FamilienRaum identifiziert. (Wir empfehlen eine Telefonnummer zu verwenden an die sie sich leicht erinnern)",
+	"portadaBotonSiguiente":"Folgende",
+	"portadaPaso2":"Dies ist der Link, um den Chatraum zu breteten.",
+	"portadaPaso2Copiar":"Kopieren Sie den Link um ihn mit Familienmitgliedern zu teilen, damit Sie gemeinsam den Raum über <em>Chrome</em> oder <em>Android </em> mobilen Browser betreten können",
+	"portadaBotonAnterior":"Zurück",
+	"portadaBotonEntrar":"Enter",
+	"portadaEntrarModoExperto":"Experten-Modus (mit alle Tasten)",
+	"portadaCopiadoConExito":"Adresse erfolreigh in die Zwischenablage kopiert.",
+	"portadaSalasVisitadas":"Si haben bereits von diesem Gerät die folgenden Räume aus besucht.",
+	"portadaNoEsNumeroValido":"Das ist keine gültige Nummer. Versuchen Sie es mit einen 9-stelligen Zahl",
+	"pieIntro":"<a href='https://www.techpeople.care/' target='_blank'> TechPeopleCare Dienst, entwickelt von <a href='https://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> auf der Grundlage der freien und sicheren Platform <a href='https://jitsi.org/' target='_blank'>Jitsi</a>.",
+	"pieEnlaces":"<a href='/de/hilfe/'>Hilfe</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a haref='/de/rechtliches/'>Datenshütz</a>",
+	"ayudaTitulo":"Wie bereite ich ein Handy oder Tablet für eine Person vor, die keine Technik-Kenntnisse hat?",
+	"ayudaSubtitulo":"Ziel ist es, dass die ältere Person in der Lage, sich per Videoanruf mit nur 4 Tasten zu verbinden.",
+	"ayudaBotonCorazon":"Das Hertz-Symbol für den Zugriff auf die Anwendung.",
+	"ayudaBotonVerde":"Die grüne Taste um die Anruf zu beginnen.",
+	"ayudaBotonRojo":"Die rote Taste zum Auflegen des Anrufs.",
+	"ayudaBotonCirculo":"Der Kreis der Statusleiste, um neu zu beginnen.",
+	"ayudaMinimo":"Das Mindeste.",
+	"ayudaMinimo1":"1º Erstellen Sie ein Symbol auf dem Startbildschirm, lassen Sie es zentriert und verbergen oder löschen Sie alle anderen Symbole.",
+	"ayudaMinimo2":"2º Öffnen Sie die Anwendung zum ersten Mal, um die Verwendung von Kamera und Mikrofon zu ermöglichen.",
+	"ayudaComoLoHago":"Wie mache ich es?",
+	"ayudaRecomendaciones":"Weiter Vorschläge",
+	"ayudaRecomendacion1":"Lautstärke auf Maximun stellen",
+	"ayudaRecomendacion2":"Grösse der Schriftart erhöhen.",
+	"ayudaRecomendacion3":"Alle möglichen Anwendungen entfernen.",
+	"ayudaRecomendacion4":"Anwendungen vom Startbildschirm ausblenden , die nicht deinstalliert werden können.",
+	"ayudaRecomendacion5":"Benachrichtigungen für alle Anwendungen deaktivieren.",
+	"ayudaRecomendacion6":"Bildschirmsperre deaktivieren.",
+	"ayudaRecomendacion7":"PIN in den Sicherheitsoptionen deaktivieren",
+	"ayudaRecomendacion8":"Energieeinsparung auf 10 Minuten oder mehr einstellen",
+	"ayudaRecomendacion9":"Automatische Updates deaktivieren",
+	"ayudaRecomendacion10":"Lassen Sie nur das Symbol videollama.me auf dem Startbildschirm",
+	"llamadaAyudaTitulo":"Befolgen Sie diese Schritte, um die Benutzun für Senioren  zu vereinfachen",
+	"llamadaBotonContinuar":"Fortsetzen",
+	"llamadaNombreFamiliar":"Verwandte",
+	"legalPrivacidadTitulo":"Datenschutzerklärung.",
+	"legalPrivacidadSubtitulo1":"1. Wer ist der Datenschutzbeauftragte?",
+	"legalPrivacidadSubtitulo2":"2. Welche Daten sammelm wir?",
+	"legalPrivacidadDato1":"ZeitsTempel des Zugriffs auf die Seite oder Ressource.",
+	"legalPrivacidadDato2":"Quell-IP und Seite, von den auszugreifen. (Referer)",
+	"legalPrivacidadDato3":"Identifizierung des anrufenden Browser. (User Agent)",
+	"legalPrivacidadDato4":"Identifikation des Raumes, den Sie betreten und ob Sie im abgesicherten Modus eintreten.",
+	"legalPrivacidadSubtitulo3":"3.Wozu bearbereiten wir Ihre Daten?",
+	"legalPrivacidadFin1":"Um Statistiken über die Nutzung des Dienstes zu generieren.",
+	"legalPrivacidadFin2":"Um die Richtlinien zur Aufbewahrung von Protokollen zu erfüllen.",
+	"legalPrivacidadFin3":"Um Zwischenfälle des Dienstes zu beheben.",
+	"legalPrivacidadFin4":"Zur Verbesserung der Benutzererfahrung.",
+	"legalPrivacidadSubtitulo4":"Empfänger von Datenübermittlungen.",
+	"legalPrivacidad4p1":"Aufgrund des Art des Dienstens verwenden wir die Infrastruktur von <em>meet.jit.si</em> über seine API, mit der Konfigurationsoption <em>disable ThirdPartyRequest</em>,um die Vergolgung mit Google Analitycs, die standardmässig aktiviert sind zu vermeiden.",
+	"legalPrivacidad4p2":"So bald Sie den Raum betreten, sind Sie auf ihren Servern, deren Datenshutzerklärung <a href='https:/jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/ ist </a> ",
+	"legalPrivacidad4p3":"Alle anderen Bibliotheken werden von unserem Server geladen ohne Verwendung von CDNs oder anderen Servern.",
+	"legalPrivacidadSubtitulo5":"5. Cookies",
+	"legalPrivacidad5p1":"Wir verwenden ein eigenes Cookie, in dem wir die Identifikatoren der Räume speichern, die Sie von diesem Gerät aus betreten haben. Dies dient sowohl dazu, Ihnen diese auf der Titelseite anzuzeigen, als auch, Ihnen nicht jedes Mal, wenn Sie das Gerät betreten, die Anweisungen zum Konfiguration des Gerät anzuzeigen.",
+	"legalPrivacidad5p2":"Alle eingebetteten Videos werden mit <em>youtube no-cookie</em> gemacht, so dass es auch keine Tracking durch Dritte gibt, bis Du das Video abzuspielst.",
+	"legalPrivacidad5p3":"Wir verwenden keine weiteren Cookies, weder eigene noch von Drittanbieter.",
+	"legalLicenciasTitulo":"Uhrberrechte und Lizenzen.",
+	"legalLicenciasP1":"Die gesamte Webseite und Ihre Inhalte sind im Repository unter der Lizenz <em>GNU AFFERO GENERAL PUBLIC LICENSE</em> veröffentlicht, deren vollständinger Text unter:",
+	"ayudaLeerMas":"Lesen Sie mehr"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	
