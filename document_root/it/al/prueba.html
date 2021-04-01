@@ -129,9 +129,19 @@
     api.on('readyToClose', function(){ location.reload() });
     api.on('videoMuteStatusChanged', function(e) {
       if (e.muted) {
-        alert(JSON.stringify(e));
+        //alert(JSON.stringify(e));
         api.isVideoAvailable().then(function(available) {
-          alert(JSON.stringify(available));
+          if (available) api.executeCommand('toggleVideo');
+          //alert(JSON.stringify(available));
+        });
+      }
+    });
+    api.on('audioMuteStatusChanged', function(e) {
+      if (e.muted) {
+        //alert(JSON.stringify(e));
+        api.isAudioAvailable().then(function(available) {
+          if (available) api.executeCommand('toggleAudio');
+          //alert(JSON.stringify(available));
         });
       }
     });
