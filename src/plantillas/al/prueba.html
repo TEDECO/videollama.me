@@ -288,7 +288,7 @@ $(function() {
     api.executeCommand('displayName', '');
     api.executeCommand('avatarUrl', 'https://videollama.me/img/corazon.jpg');
     api.on('readyToClose', function(){ location.reload() });
-    api.on('videoMuteStatusChanged'. function(e) {
+    api.on('videoMuteStatusChanged', function(e) {
       alert(JSON.stringify(e));
     });
   }
