@@ -1,0 +1,102 @@
+{	
+	"langCode":"it",
+	"raiz":"/it/",
+	"nativeName":"Italiano",
+	"ayudaSlug":"aiuto",
+	"legalSlug":"legale",
+	"llamadaSlug":"al",
+	"dominio":"videollama.me",
+	"titulo":"Videochiama i tuoi contatti in maniera facile, libera e sicura ",
+	"descripcion":"Sistema di videoconferenza basato con un software libero Jitsi semplificato per persone con difficoltá nell´uso delle nuove tecnologie.",
+	"tituloRRSS":"Videochiama i tuoi contatti in maniera facile, libera e sicura ",
+	"descripcionRRSS":"Sistema di videoconferenza basato con un software libero Jitsi semplificato per persone con difficoltá nell´uso delle nuove tecnologie.",
+	"urlRRSS":"https://videollama.me",
+	"urlImagenHorizontalRRSS":"https://videollama.me/img/facebook-share2.png",
+	"urlImagenCuadradaRRSS":"https://videollama.me/img/corazon.png",
+	"portadaIntro":"In questo sito potrai creare una stanza virtuale dove reunirti con i tuoi contatti tramite videoconferenza. <strong>La persona con difficoltá nell´uso della tecnologia deve accedere attraverso un icona della schermata d´inizio<strong> direttamente alla stanza per evitare che scriva alcun numero. <a href='/aiuto'>¿Come preparare un cellulare o un tablet?</a>",
+	"portadaPaso1":"Scrivi un <b>numero di 9 cifre</b>che identificherá la vostra stanza familiare (raccomandiamo di usare un numero di telefono che si ricorda facilmente):",
+	"portadaBotonSiguiente":"Seguente",
+	"portadaPaso2":"L´indirizzo elettronico per entrare nella vostra stanza é:",
+	"portadaPaso2Copiar":"Copia il link per condividerlo con il resto della tua famiglia cosí potrete intrare insieme nella stanza da un motore di ricerca <em>Chrome</em> o cellulare <em>Android.</em>",
+	"portadaBotonAnterior":"Anteriore",
+	"portadaBotonEntrar":"Entrare",
+	"portadaEntrarModoExperto":"Entrare in modo esperto (con tutti tasti)",
+	"portadaCopiadoConExito":"É stato copiato con successo l´indirizzo negli appunti",
+	"portadaSalasVisitadas":"Hai visitato anteriormente le seguenti sale da questo dispositivo:",
+	"portadaNoEsNumeroValido":"Non é un numero valido. Prova con un numero di 9 cifre",
+	"pieIntro":" Servizio di <a href='https://www.techpeople.care/' target='_blank'>TechPeopleCare</a> disegnato da <a href='http://tedeco.fi.upm.es/' target='_blank'>TEDECO (UPM)</a> utilizzando come base la piattaforma libera e sicura <a href='https://jitsi.org/' target='_blank'>Jitsi</a>.",
+	"pieEnlaces":"<a href='/it/aiuto/'>aiuto</a> | <a href='mailto:hola@videollama.me'>hola@videollama.me</a> | <a href='/it/legale/'>privacidad</a>",
+	"ayudaTitulo":"Come preparare un cellulare o un tablet per una persona che non maneggia la tecnologia?",
+	"ayudaSubtitulo":"L´obbietivo é che una persona anziana sia capace di connettersi per fare una videochiamata semplicemente premendo 4 tasti:",
+	"ayudaBotonCorazon":"L´icona del cuore per accedere all´applicazione",
+	"ayudaBotonVerde":"Il bottone verde per iniziare la chiamata",
+	"ayudaBotonRojo":"Il bottone rosso per chiudere la chiamata",
+	"ayudaBotonCirculo":"Il 'cerchio' della barra dello stato per ricominciare",
+	"ayudaMinimo":"Il minimo",
+	"ayudaMinimo1":"1ºCreare un'icona nella schermata d´inizio, lasciarlo centrato e nascondere o eliminare il resto delle icone. ",
+	"ayudaMinimo2":"2ºAprire l´applicazione per la prima volta per permettere l´uso della videocamera e del microfono",
+	"ayudaComoLoHago":"Come lo faccio?",
+	"ayudaRecomendaciones":"Altri suggerimenti",
+	"ayudaRecomendacion1":"Alzare il volume al massimo",
+	"ayudaRecomendacion2":"Aumentare la grandezza dei caratteri",
+	"ayudaRecomendacion3":"Eliminare tutte le applicazioni possibili",
+	"ayudaRecomendacion4":"Nascondere dalla schermata d´inizio le aplicazioni che non si possono disinstallare",
+	"ayudaRecomendacion5":"Disattivare le notifiche di tutte le applicazioni",
+	"ayudaRecomendacion6":"Disattivare il blocco della schermata",
+	"ayudaRecomendacion7":"Disattivare il PIN in opzioni di sicurezza",
+	"ayudaRecomendacion8":"Stabilire il risparmio di energia a 10 minuti o più",
+	"ayudaRecomendacion9":"Disattivare gli aggiornamenti automatici",
+	"ayudaRecomendacion10":"Lasciare solo nella schermata d´inizio l´icona di videollama.me",
+	"llamadaAyudaTitulo":"Segui questi passi per terminare di facilitare la videochiamata a una persona anziana",
+	"llamadaBotonContinuar":"Continuare",
+	"llamadaNombreFamiliar":"Familiare",
+	"legalPrivacidadTitulo":"Politica della privacy",
+	"legalPrivacidadSubtitulo1":"1.Chi é il responsabile del trattamento dei tuoi dati?",
+	"legalPrivacidadSubtitulo2":"2.Che dati raccogliamo?",
+	"legalPrivacidadDato1":"Timestamp di accesso alla pagina o alla risorsa",
+	"legalPrivacidadDato2":" IP di origine e pagina da cui accedi (Referer)",
+	"legalPrivacidadDato3":"Identificazione del browser che realizza la richiesta (User Agent)",
+	"legalPrivacidadDato4":"Identificatore della sala in cui  entri e se entri in modo esperto",
+	"legalPrivacidadSubtitulo3":"3. Con quale fine trattiamo i tuoi dati?",
+	"legalPrivacidadFin1":"Per generare statistiche dell´uso del servizio",
+	"legalPrivacidadFin2":"Per compiere  la normativa di conservazione dei logs",
+	"legalPrivacidadFin3":"Per risolvere problemi nel servizio",
+	"legalPrivacidadFin4":"Per migliorare la esperienzia dell´utente",
+	"legalPrivacidadSubtitulo4":"4.Destinatari di cessioni o trasferimento di dati",
+	"legalPrivacidad4p1":"Data la natura del servizio utilizziamo l´infrastruttura di <em>meet.jit.si</em>, attraverso la sua API, con l´opzione di configurazione <em>disableThirdPartyRequests</em> per che non venga utilizato il tracciamento con Google Analitycs che tengono attivato per difetto.",
+	"legalPrivacidad4p2":"Una volta entrato nella sala, stai nei suoi server, la cui politica di privacy <a href='https://jitsi.org/meet-jit-si-privacy/'>https://jitsi.org/meet-jit-si-privacy/</a>",
+	"legalPrivacidad4p3":"Il resto delle librerie si caricano da un nostro server, senza far uso di CDNs ne di altri server. ",
+	"legalPrivacidadSubtitulo5":"5.Cookies",
+	"legalPrivacidad5p1":"Usiamo un cookie proprio dove immagazziniamo gli identificatori delle sale nelle quali sei entrato da questo dispositivo, che serve tanto per poter mostrartele nella pagina iniziale, come per non mostrarti le istruzioni per configurare il dispositivo ogni volta che entri. ",
+	"legalPrivacidad5p2":"Tutti i video incorporati si realizzano con <em>youtube-nocookie</em>, per lo quale non viene prodotto tracciamento da parte di terzi fino a quando riproduci il video. ",
+	"legalPrivacidad5p3":"Non usiamo pú cookies, ne propri ne di terzi.",
+	"legalLicenciasTitulo":"Diritti di autore e licenze.",
+	"legalLicenciasP1":"Tutta la web e i suoi contenuti sono liberi nel deposito  sotto la licencia <em>GNU AFFERO GENERAL PUBLIC LICENSE</em> il cui testo completo puoi incontrarlo in: ",
+	"ayudaLeerMas":"Leggere di più"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	
