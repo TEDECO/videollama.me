@@ -82,7 +82,7 @@
     color: #333 !important;
     text-align: center;
   }
-  #paso1, #paso2, #paso3, #iconos {
+  #paso1, #paso2, #paso3, #iconos, #notifications-container {
     display: none;
   }
   #iconos img {
@@ -187,10 +187,16 @@ $(function() {
         SHOW_CHROME_EXTENSION_BANNER: false,
         AUTHENTICATION_ENABLE: false,
         SETTINGS_SECTIONS: [],
-        DEFAULT_REMOTE_DISPLAY_NAME: 'Familiar',
+        DISABLE_JOIN_LEAVE_NOTIFICATIONS: true,
+        DISABLE_FOCUS_INDICATOR: true,
+        DISABLE_DOMINANT_SPEAKER_INDICATOR: true,
+        DISABLE_FOCUS_INDICATOR: true,
+        DISABLE_PRESENCE_STATUS: true,
+        DISABLE_RINGING: true,
+        DEFAULT_REMOTE_DISPLAY_NAME: '${{ traduce.llamadaNombreFamiliar }}$',
         DEFAULT_LOCAL_DISPLAY_NAME: ''
     },
-    //onload: openFullscreen(),
+    onload: function(e) { $(e.target).contents().find("head").append("<style>#notifications-container{display:none;}</style>"); },
     parentNode: document.getElementById('video')
   };
   const opciones_experto = {
