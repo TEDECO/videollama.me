@@ -75,6 +75,10 @@
   function esModoExperto() {
      return (window.location.href.split('&experto').length == 2);
   }
+  
+  function sinAyuda() {
+     return (window.location.href.split('&sinayuda').length == 2);
+  }
 
   function hasVisitadoSala() {
     var sala = dameSala();
@@ -174,7 +178,7 @@
 
   // MAIN
   generarManifest();
-  if (!hasVisitadoSala() && !esModoExperto()) $('#ayuda').fadeIn();
+  if (!hasVisitadoSala() && !esModoExperto() && !sinAyuda()) $('#ayuda').fadeIn();
   $('.desplegar').on('click', function(e) {
     e.preventDefault();
     var objetivo = $(this).attr('href');
