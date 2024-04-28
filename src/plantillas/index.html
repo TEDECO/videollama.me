@@ -200,6 +200,13 @@
       $('#video').on('click', function(e) {
         $(this).replaceWith('<iframe src="https://www.youtube-nocookie.com/embed/0BNooZYVLIw?controls=1&autoplay=1&hl=${{ traduce.langCode }}$&cc_load_policy=1&cc_lang_pref=${{ traduce.langCode }}$&showinfo=0" width="100%" height="'+$(this).height()+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
       });
+
+      Swal.fire({
+        title: 'No funciona correctamente',
+        text: 'La instancia pública de jitsi ya no permite ciertas personalizaciones esenciales para lo que fue concebida esta herramienta. Lo más pronto posible instalaremos una nueva versión de videollama.me en servidores de la U.P.M. y restableceremos el servicio.',
+        icon: 'warning',
+        confirmButtonText: 'Continuar'
+      });
       
     });
 
