@@ -102,7 +102,7 @@
               <button class="button is-large is-link is-rounded" id="ir">${{ traduce.portadaBotonEntrar }}$</button>
            </div>
            <div style="text-align:center; margin-top:25px">
-             <a id="entrarexperto" href="">${{ traduce.portadaEntrarModoExperto }}$</a>
+             <a id="entrarexperto" style="color: #086b57;" href="">${{ traduce.portadaEntrarModoExperto }}$</a>
            </div> 
            </div>
 
@@ -203,11 +203,12 @@
 
       Swal.fire({
         title: 'No funciona correctamente',
-        text: 'La instancia pública de jitsi ya no permite ciertas personalizaciones esenciales para lo que fue concebida esta herramienta. Lo más pronto posible instalaremos una nueva versión de videollama.me en servidores de la U.P.M. y restableceremos el servicio.',
+        html: '<p>La instancia pública <a href="https://meet.jit.si/">meet.jit.si</a> ya no permite acceder sin autentificación a una sala directamente. Como resultado <em>videollama.me</em> ya no sirve para lo que fue diseñada.</p><p>Estamos trabajando en la próxima versión donde recuperaremos la usabilidad deseada.</p>', 
         icon: 'warning',
         iconColor: '#086b57',
-        confirmButtonText: 'Continuar',
-        confirmButtonColor: '#086b57'
+        timer: 6000,
+        timerProgressBar: true,
+        showConfirmButton: false
       });
       
     });
