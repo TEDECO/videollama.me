@@ -93,6 +93,16 @@ textarea {
   resize: vertical;
 }
 
+#texto-ayuda a {
+  color: #086b57;
+  font-weight: bold;
+}
+
+#texto-ayuda a:hover {
+  text-decoration: underline;
+} 
+
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
